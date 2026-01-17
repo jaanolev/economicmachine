@@ -60,11 +60,12 @@ export class ShortTermCycleSystem implements System {
   }
 
   private determinePhase(position: number): ShortTermCyclePhase {
-    // Expansion is longest phase
-    if (position < 0.45) return 'expansion';
-    if (position < 0.55) return 'peak';
-    if (position < 0.90) return 'contraction';
-    return 'trough';
+    // Expansion is longest phase (realistic business cycle)
+    // Typical cycle: ~5 years expansion, ~1 year contraction
+    if (position < 0.55) return 'expansion';   // 55% of cycle
+    if (position < 0.65) return 'peak';        // 10% of cycle
+    if (position < 0.85) return 'contraction'; // 20% of cycle
+    return 'trough';                            // 15% of cycle
   }
 
   private applyPhaseEffects(
@@ -74,78 +75,94 @@ export class ShortTermCycleSystem implements System {
   ): void {
     const eco = state.economy;
 
+    // Base growth from productivity (always positive)
+    const monthlyProductivityGrowth = eco.productivityGrowthRate / 12;
+
     // Credit growth multiplier based on phase
     // Dalio: Credit is the key driver of short-term cycles
     let creditMultiplier = 1;
-    let spendingMultiplier = 1;
+    let inflationAdjustment = 0;
 
     switch (phase) {
       case 'expansion':
-        // Credit expands, spending grows, incomes rise
-        creditMultiplier = 1.005;  // 0.5% monthly = ~6% annual
-        spendingMultiplier = 1.003;
+        // Credit expands faster than productivity - creates boom
+        creditMultiplier = 1.006;  // ~7% annual credit growth
+        inflationAdjustment = 0.002;  // Inflation rises
 
         // Asset prices rise (wealth effect)
         eco.assetPriceInflation = 0.005;
 
         // Unemployment falls
-        eco.unemployment = Math.max(0.03, eco.unemployment - 0.001);
+        eco.unemployment = Math.max(0.03, eco.unemployment - 0.002);
         break;
 
       case 'peak':
         // Credit growth slows, inflation high
-        creditMultiplier = 1.001;
-        spendingMultiplier = 1.001;
+        creditMultiplier = 1.002;
+        inflationAdjustment = 0.001;  // Inflation still rising but slower
 
-        // Inflation peaks
-        eco.inflation = Math.min(0.05, eco.inflation + 0.001);
+        // Unemployment stabilizes
+        eco.unemployment = Math.max(0.03, eco.unemployment - 0.0005);
         break;
 
       case 'contraction':
-        // Credit contracts, spending falls
-        creditMultiplier = 0.998;  // Credit shrinking
-        spendingMultiplier = 0.997;
+        // Credit contracts, but not as severely
+        creditMultiplier = 0.9985;  // Mild credit contraction
+        inflationAdjustment = -0.001;  // Inflation falls
 
         // Asset prices fall
-        eco.assetPriceInflation = -0.003;
+        eco.assetPriceInflation = -0.002;
 
         // Unemployment rises
-        eco.unemployment = Math.min(0.12, eco.unemployment + 0.002);
-
-        // Inflation falls
-        eco.inflation = Math.max(-0.01, eco.inflation - 0.002);
+        eco.unemployment = Math.min(0.10, eco.unemployment + 0.002);
         break;
 
       case 'trough':
-        // Bottom of cycle, credit stabilizes
-        creditMultiplier = 1.0;
-        spendingMultiplier = 0.999;
+        // Bottom of cycle, credit stabilizes, recovery begins
+        creditMultiplier = 1.001;  // Credit starts growing again
+        inflationAdjustment = -0.0005;  // Inflation bottoms
 
-        // Unemployment peaks
-        eco.unemployment = Math.min(0.10, eco.unemployment + 0.001);
+        // Unemployment peaks then stabilizes
+        eco.unemployment = Math.min(0.08, eco.unemployment + 0.0005);
         break;
     }
 
-    // Apply multipliers
+    // Apply credit growth
     eco.spendingFromCredit *= creditMultiplier;
+
+    // Money supply grows with productivity (base money)
+    eco.spendingFromMoney *= (1 + monthlyProductivityGrowth);
+
+    // Total spending = money + credit (Dalio's key equation)
     eco.totalSpending = eco.spendingFromMoney + eco.spendingFromCredit;
     eco.creditAsPercentOfSpending = eco.spendingFromCredit / eco.totalSpending;
 
-    // GDP follows spending (Dalio: spending = income)
-    const prevGDP = eco.nominalGDP;
-    eco.nominalGDP *= spendingMultiplier;
+    // GDP follows spending (Dalio: one person's spending = another's income)
+    // Nominal GDP grows with total spending
+    const spendingGrowth = (creditMultiplier - 1) + monthlyProductivityGrowth;
+    eco.nominalGDP *= (1 + spendingGrowth);
 
-    // Real GDP accounts for inflation
-    eco.realGDP = eco.nominalGDP / (eco.priceLevel / 100);
+    // Inflation = spending growth - productivity growth (Dalio's formula)
+    const impliedInflation = spendingGrowth * 12 - eco.productivityGrowthRate;
+    eco.inflation = eco.inflation * 0.9 + (impliedInflation + inflationAdjustment) * 0.1;
 
-    // Update output gap
-    eco.outputGap = (eco.realGDP - eco.potentialGDP) / eco.potentialGDP;
-
-    // Credit growth (year-over-year approximation)
-    eco.creditGrowth = (creditMultiplier - 1) * 12;
+    // Clamp inflation to reasonable bounds
+    eco.inflation = Math.max(-0.03, Math.min(0.08, eco.inflation));
 
     // Update price level
     eco.priceLevel *= (1 + eco.inflation / 12);
+
+    // Real GDP = Nominal GDP / Price Level
+    eco.realGDP = eco.nominalGDP / (eco.priceLevel / 100);
+
+    // Output gap (how far from potential)
+    eco.outputGap = (eco.realGDP - eco.potentialGDP) / eco.potentialGDP;
+
+    // Credit growth (annualized)
+    eco.creditGrowth = (creditMultiplier - 1) * 12;
+
+    // Wage growth follows productivity + some inflation pass-through
+    eco.wageGrowth = eco.productivityGrowthRate + eco.inflation * 0.5;
 
     // Log phase transitions
     if (phase !== prevPhase) {
