@@ -1,0 +1,547 @@
+{
+  "card_id": "landau_2026",
+  "year_cutoff": 2026,
+  "n_seed": 9,
+  "n_reframe_starts": 20,
+  "n_sketched_new": 38,
+  "n_nodes": 50,
+  "n_edges": 116,
+  "n_merges": 128,
+  "checks": [
+    {
+      "id": "02eb8f240e39",
+      "statement": "prime_values | weights=indicator | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Specialising away the extra variable deletes the bilinear input.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.0264
+    },
+    {
+      "id": "137027db47d0",
+      "statement": "prime_values | weights=richer | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Specialising away the extra variable deletes the bilinear input.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.0264
+    },
+    {
+      "id": "1cdc8feaa381",
+      "statement": "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | barrier=no_extra_variable | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Specialising away the extra variable deletes the bilinear input.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.0264
+    },
+    {
+      "id": "5b978a2cbc0d",
+      "statement": "prime_values | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Specialising away the extra variable deletes the bilinear input.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.0264
+    },
+    {
+      "id": "71811f8d4ad9",
+      "statement": "prime_values | weights=selberg_1d | extra_var=no | barrier=parity | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Type I / indicator detection of primes hits the parity barrier.",
+      "kind": "code",
+      "shadow": null,
+      "new_confidence": 0.0384
+    },
+    {
+      "id": "7ad8cf5303e8",
+      "statement": "prime_values | weights=selberg_1d | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Specialising away the extra variable deletes the bilinear input.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.0264
+    },
+    {
+      "id": "c028f18701c7",
+      "statement": "prime_values | weights=indicator | extra_var=no | barrier=parity | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Type I / indicator detection of primes hits the parity barrier.",
+      "kind": "code",
+      "shadow": null,
+      "new_confidence": 0.0384
+    },
+    {
+      "id": "edb3d24ee1c8",
+      "statement": "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Specialising away the extra variable deletes the bilinear input.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.0264
+    },
+    {
+      "id": "6f8dfcb852a0",
+      "statement": "translation | extra_var=yes | family=n2plus1",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "9559525859c4",
+      "statement": "translation | family=n2plus1",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "aa4520b9cba7",
+      "statement": "translation | extra_var=yes | family=two_squares",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "cf5d92ce44ce",
+      "statement": "translation | extra_var=no | family=linear",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "f2bff31f2baa",
+      "statement": "translation | extra_var=yes | family=x2y4",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "70c57d13b5a7",
+      "statement": "translation | extra_var=no | family=x2y4",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.154
+    },
+    {
+      "id": "ac8cc1021909",
+      "statement": "translation | extra_var=no | family=two_squares",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.154
+    },
+    {
+      "id": "909023f18703",
+      "statement": "heuristic_target | conditional | family=n2plus1",
+      "status": "checked_fail",
+      "note": "A heuristic close is not a deduction. Flagged judgment.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.075
+    }
+  ],
+  "top_paths": [
+    {
+      "node_ids": [
+        "52fc586c27eb",
+        "7e192be76853"
+      ],
+      "statements": [
+        "prime_values | extra_var=no | family=linear",
+        "relative_density | extra_var=no | family=linear"
+      ],
+      "moves": [
+        "RELATIVE_AMBIENT"
+      ],
+      "end_pred": "relative_density",
+      "end_status": "sketched",
+      "end_conditional": false,
+      "score": 0.11560000000000002,
+      "end_confidence": 0.34
+    },
+    {
+      "node_ids": [
+        "52fc586c27eb",
+        "cf5d92ce44ce"
+      ],
+      "statements": [
+        "prime_values | extra_var=no | family=linear",
+        "translation | extra_var=no | family=linear"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "16ac7f60ebaa",
+        "1768df022bdd",
+        "711f54d736ad",
+        "b72b1c496561",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | extra_var=no | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=n2plus1",
+        "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | family=n2plus1",
+        "translation | extra_var=no | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "TRANSLATE",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.058988160000000005,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "16ac7f60ebaa",
+        "1768df022bdd",
+        "711f54d736ad",
+        "3488b81a7212",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | extra_var=no | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=n2plus1",
+        "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | family=n2plus1",
+        "relative_density | extra_var=no | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.05277888,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "897b247bbc54",
+        "9bdc78a53c67",
+        "f012ab9cd6ea",
+        "a81d13fa5b1c",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | demand=gt_half | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | family=n2plus1",
+        "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | family=n2plus1",
+        "relative_density | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.05277888,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "897b247bbc54",
+        "9bdc78a53c67",
+        "f012ab9cd6ea",
+        "9559525859c4",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | demand=gt_half | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | family=n2plus1",
+        "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | family=n2plus1",
+        "translation | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "TRANSLATE",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.041291711999999994,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "16ac7f60ebaa",
+        "1768df022bdd",
+        "711f54d736ad",
+        "3488b81a7212",
+        "b72b1c496561"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | extra_var=no | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=n2plus1",
+        "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | family=n2plus1",
+        "relative_density | extra_var=no | family=n2plus1",
+        "translation | extra_var=no | family=n2plus1"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.03979360000000001,
+      "end_confidence": 0.8
+    },
+    {
+      "node_ids": [
+        "e285607cdcbe",
+        "711f54d736ad",
+        "3488b81a7212",
+        "b72b1c496561",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=all | have=half | family=n2plus1",
+        "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | family=n2plus1",
+        "relative_density | extra_var=no | family=n2plus1",
+        "translation | extra_var=no | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "TRANSLATE",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.036465408,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "16ac7f60ebaa",
+        "1768df022bdd",
+        "df527bb82abf",
+        "b72b1c496561",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | extra_var=no | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=n2plus1",
+        "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | family=n2plus1",
+        "translation | extra_var=no | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "TRANSLATE",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.035392896,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "e285607cdcbe",
+        "6e8b5f6427f1",
+        "df527bb82abf",
+        "b72b1c496561",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=all | have=half | family=n2plus1",
+        "level_of_distribution | moduli=smooth | have=gt_half_smooth | conditional | family=n2plus1",
+        "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | family=n2plus1",
+        "translation | extra_var=no | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "CHANGE_SUPPORT",
+        "COMBINE",
+        "TRANSLATE",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.03217536,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "16ac7f60ebaa",
+        "1768df022bdd",
+        "df527bb82abf",
+        "3488b81a7212",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | extra_var=no | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=n2plus1",
+        "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | family=n2plus1",
+        "relative_density | extra_var=no | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.031667328,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "897b247bbc54",
+        "9bdc78a53c67",
+        "638002728cd6",
+        "a81d13fa5b1c",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | demand=gt_half | family=n2plus1",
+        "weighted_detector | weights=richer | demand=any_positive | family=n2plus1",
+        "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | conditional | family=n2plus1",
+        "relative_density | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.031667328,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "e285607cdcbe",
+        "6e8b5f6427f1",
+        "638002728cd6",
+        "a81d13fa5b1c",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=all | have=half | family=n2plus1",
+        "level_of_distribution | moduli=smooth | have=gt_half_smooth | conditional | family=n2plus1",
+        "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | conditional | family=n2plus1",
+        "relative_density | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "CHANGE_SUPPORT",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.02878848,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "e285607cdcbe",
+        "6e8b5f6427f1",
+        "d4a0120898d8",
+        "a81d13fa5b1c",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=all | have=half | family=n2plus1",
+        "level_of_distribution | moduli=smooth | have=gt_half_smooth | conditional | family=n2plus1",
+        "prime_values | weights=selberg_1d | moduli=smooth | demand=gt_half | have=gt_half_smooth | conditional | family=n2plus1",
+        "relative_density | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "CHANGE_SUPPORT",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.02878848,
+      "end_confidence": 0.84
+    },
+    {
+      "node_ids": [
+        "e285607cdcbe",
+        "6e8b5f6427f1",
+        "df527bb82abf",
+        "3488b81a7212",
+        "1c7dc7328e61"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=all | have=half | family=n2plus1",
+        "level_of_distribution | moduli=smooth | have=gt_half_smooth | conditional | family=n2plus1",
+        "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | family=n2plus1",
+        "relative_density | extra_var=no | family=n2plus1",
+        "prime_values | extra_var=yes | family=x2y4"
+      ],
+      "moves": [
+        "CHANGE_SUPPORT",
+        "COMBINE",
+        "RELATIVE_AMBIENT",
+        "ENLARGE"
+      ],
+      "end_pred": "prime_values",
+      "end_status": "seed",
+      "end_conditional": false,
+      "score": 0.02878848,
+      "end_confidence": 0.84
+    }
+  ],
+  "n_paths": 250,
+  "honesty": "No progress on Landau. High path scores are gut feelings after a cheap barrier check. Do not treat a surviving path as a proof."
+}

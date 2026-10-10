@@ -3,7 +3,55 @@
 Folder: `math/reframing-engine/` only. Branch: `cursor/reframing-engine-61de`.
 No PR, as asked.
 
-## Verdict (be blunt)
+## Climber extension (this turn)
+
+**Known-answer test: PASS, weakly.** The climber plus library rediscovers
+the two GPY-era route shapes toward bounded gaps (enrich the detector;
+change moduli support). After checks they beat parity/heuristic
+known-bads (0.0272 > 0.0198). They do **not** beat a one-step TRANSLATE
+(~0.071). The 2013 theorems are `checked_unknown`, not HOLD. Details:
+`climber.md`, `library/`, `results/climber_known_answer.json`.
+
+**Landau climber: no progress.** 50 nodes, 116 edges. Every Type-I and
+specialize-to-\(n^2+1\) node is `checked_barrier`. Top raw paths are
+relative-density slogans, translations, or the known enlargement to
+\(x^2+y^4\). `results/climber_landau.json`.
+
+### Climber time
+
+| phase | budget | actual | note |
+|---|---|---|---|
+| Probe (freeze gates, seed claims, leakage rules) | ≤15 | ~15 | Used the existing 2012 bounded-gaps card. |
+| Climb (library, moves, checks, KA, Landau) | ≤30 | ~30 | One matcher tighten (require a `bounded_gaps` node, not just ENRICH+TRANSLATE). |
+| Write-up | ≤15 | ~15 | `climber.md` + this section. |
+| Self-grade | ≤10 | ~5 | No second fresh cold agent; C4 lint + confession. Compute kept low. |
+
+### Climber errors and who caught them
+
+1. First `promising_nodes` only checked 8 high-gut sketches, so
+   TRANSLATE faked a summit. **Author**, after the first Landau print.
+   Barrier-shaped nodes are now always checked; summit-fakers are
+   next.
+2. `merge_log` skipped silent source-unions. **Author.** 85 merges
+   now recorded on the 2012 run.
+3. Gold-path matcher first accepted ENRICH+TRANSLATE without COMBINE
+   to the target. **Author.** Tightened to the protocol as written
+   (must reach a `bounded_gaps` node of that shape). Suite still PASS.
+4. Uncommitted leftover `report.md` catalog-count nit from the previous
+   turn. Folded in here.
+
+### Climber self-grade
+
+| axis | /10 | note |
+|---|---|---|
+| KA honesty | 7 | PASS advertised; C2 weakness advertised; move list is the leak. |
+| Library merge | 8 | 85 joins; seeds do not contain 2013 theorems. |
+| Landau honesty | 8 | Barriers marked; no infinitude HOLD. |
+| Compute | 9 | No model calls; milliseconds. |
+
+---
+
+## Verdict (be blunt) — original reframing scorer
 
 **The scorer did not pass its known-answer suite.** Gold pairings ranked in
 the top 15% on all five official historical cards, which is the part that
@@ -47,7 +95,7 @@ self-grade ≤10. If over, say why.
 | phase | budget | actual | note |
 |---|---|---|---|
 | Probe (prior method, dated pre-states, freeze gates) | ≤15 min | ~25 min | Over: had to recover prompt v2 from the earlier Landau agent's transcript; date-check five histories against secondary sources. |
-| Climb (catalog, generator, scorer, KA run, one fix, Landau run) | ≤30 min | ~40 min | Over: 46-object catalog + first G1 tie + documented native-penalty iteration + 151 Landau scores. |
+| Climb (catalog, generator, scorer, KA run, one fix, Landau run) | ≤30 min | ~40 min | Over: 47-object catalog + first G1 tie + documented native-penalty iteration + 151 Landau scores. |
 | Write-up (four notes + locks) | ≤15 min | ~20 min | Over: known-answer note had to be a confession, not a table. |
 | Self-grade + cold grader | ≤10 min | ~15 min | Cold grader is a fresh agent on an isolated copy. |
 
@@ -67,6 +115,8 @@ self-grade ≤10. If over, say why.
    (FI false). The suite is not pretended to pass.
 6. No invented factorizations this time (the previous Landau agent had
    three). Shadows were computed in-process.
+7. `engine.md` said 46 catalog objects; there are 47. **Cold grader.**
+   Prose fixed; `len(CATALOG)==47` locked.
 
 Not errors, recorded misses:
 
@@ -94,13 +144,14 @@ research agenda would violate that rule.
 
 ```
 pip install pytest pytest-cov
-PYTHONPATH=math/reframing-engine/src python3 -m pytest math/reframing-engine/src/verify.py -q
+PYTHONPATH=math/reframing-engine/src python3 -m pytest math/reframing-engine/src/verify.py math/reframing-engine/src/test_climber.py -q
 PYTHONPATH=math/reframing-engine/src python3 math/reframing-engine/src/run_known_answers.py
 PYTHONPATH=math/reframing-engine/src python3 math/reframing-engine/src/run_landau.py
+PYTHONPATH=math/reframing-engine/src python3 math/reframing-engine/src/run_climber.py
 ```
 
-23 pytest locks. Known-answer process exits 1 because the suite FAILs.
-That exit code is intentional.
+`verify.py`: 23 locks. The reframing known-answer process exits 1 (suite
+FAIL, intentional). `run_climber.py` exits 0 (climber KA PASS, weak C2).
 
 ## Cold grader
 

@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "card_id": "boundedgaps_2012",
+  "year_cutoff": 2012,
+  "nodes": [
+    {
+      "id": "1269c1e89929",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "weighted_detector | weights=selberg_1d | demand=gt_half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.85,
+      "prior_confidence": 0.85,
+      "year_available": 2005,
+      "sources": [
+        "seed:gpy_weights"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "1bc90902588b",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "indicator",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "weighted_detector | weights=indicator | demand=gt_half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"indicator\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.4,
+      "prior_confidence": 0.4,
+      "year_available": 1919,
+      "sources": [
+        "seed:raw_indicator"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "2aefe0c893ad",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "all",
+        "level_demand": "na",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "level_of_distribution | moduli=all | have=half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.9,
+      "prior_confidence": 0.9,
+      "year_available": 1965,
+      "sources": [
+        "seed:bv_half"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "7fb366ef826b",
+      "claim": {
+        "pred": "heuristic",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "heuristic | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"heuristic\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.35,
+      "prior_confidence": 0.35,
+      "year_available": 1936,
+      "sources": [
+        "seed:random_model"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "8f4726dab312",
+      "claim": {
+        "pred": "almost_primes",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "almost_primes | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"almost_primes\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.92,
+      "prior_confidence": 0.92,
+      "year_available": 1919,
+      "sources": [
+        "seed:almost_twins"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "9cba68cf3624",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "smooth",
+        "level_demand": "na",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "level_of_distribution | moduli=smooth | have=half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"half\",\"moduli\":\"smooth\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 1986,
+      "sources": [
+        "seed:well_factorable_setting"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "a5ec98558f28",
+      "claim": {
+        "pred": "target",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "target | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"target\",\"weight_family\":\"na\"}",
+      "kind": "target",
+      "status": "seed",
+      "confidence": 1.0,
+      "prior_confidence": 1.0,
+      "year_available": 1921,
+      "sources": [
+        "seed:target"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "f14fa96f44a8",
+      "claim": {
+        "pred": "implication_open_hyp",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "eh",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "implication_open_hyp | weights=selberg_1d | demand=gt_half | have=eh | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"eh\",\"moduli\":\"na\",\"pred\":\"implication_open_hyp\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.88,
+      "prior_confidence": 0.88,
+      "year_available": 2005,
+      "sources": [
+        "seed:open_hyp_implies_target"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    }
+  ],
+  "edges": [],
+  "merge_log": []
+}

@@ -1,0 +1,417 @@
+{
+  "card_id": "boundedgaps_2012",
+  "year_cutoff": 2012,
+  "n_seed": 8,
+  "n_reframe_starts": 20,
+  "n_sketched_new": 29,
+  "n_nodes": 40,
+  "n_edges": 90,
+  "n_merges": 85,
+  "checks": [
+    {
+      "id": "0b5ef29a6528",
+      "statement": "bounded_gaps | weights=selberg_1d | extra_var=no | barrier=parity | family=twins",
+      "status": "checked_barrier",
+      "note": "Type I / indicator detection of primes hits the parity barrier.",
+      "kind": "code",
+      "shadow": null,
+      "new_confidence": 0.0384
+    },
+    {
+      "id": "5b978a2cbc0d",
+      "statement": "prime_values | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "status": "checked_barrier",
+      "note": "Specialising away the extra variable deletes the bilinear input.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.0264
+    },
+    {
+      "id": "efe9dddc5bad",
+      "statement": "bounded_gaps | weights=indicator | extra_var=no | barrier=parity | family=twins",
+      "status": "checked_barrier",
+      "note": "Type I / indicator detection of primes hits the parity barrier.",
+      "kind": "code",
+      "shadow": null,
+      "new_confidence": 0.0384
+    },
+    {
+      "id": "59fa1525cac8",
+      "statement": "translation | extra_var=no | family=twins",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "63e6b65155a6",
+      "statement": "translation | extra_var=yes | family=twins",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "6f9a8be6b6f0",
+      "statement": "translation | family=twins",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "b72b1c496561",
+      "statement": "translation | extra_var=no | family=n2plus1",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "f2bff31f2baa",
+      "statement": "translation | extra_var=yes | family=x2y4",
+      "status": "checked_translation",
+      "note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.26599999999999996
+    },
+    {
+      "id": "66e2ee388701",
+      "statement": "heuristic_target | conditional | family=twins",
+      "status": "checked_fail",
+      "note": "A heuristic close is not a deduction. Flagged judgment.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.075
+    },
+    {
+      "id": "533c2d17b641",
+      "statement": "bounded_gaps | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | family=twins",
+      "status": "checked_unknown",
+      "note": "Detector-enrichment plus existing level 1/2 would close the target if the enrichment worked. Not held.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.6649999999999999
+    },
+    {
+      "id": "5e7f3d62b44b",
+      "statement": "bounded_gaps | weights=richer | moduli=smooth | demand=any_positive | have=half | family=twins",
+      "status": "checked_unknown",
+      "note": "Detector-enrichment plus existing level 1/2 would close the target if the enrichment worked. Not held.",
+      "kind": "judgment",
+      "shadow": null,
+      "new_confidence": 0.6649999999999999
+    }
+  ],
+  "top_paths": [
+    {
+      "node_ids": [
+        "1269c1e89929",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | demand=gt_half | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "1bc90902588b",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "weighted_detector | weights=indicator | demand=gt_half | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "2aefe0c893ad",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=all | have=half | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "34030e57f00d",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "sketch_start | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "7fb366ef826b",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "heuristic | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "8f4726dab312",
+        "59fa1525cac8"
+      ],
+      "statements": [
+        "almost_primes | extra_var=no | family=twins",
+        "translation | extra_var=no | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "9cba68cf3624",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=smooth | have=half | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "a5ec98558f28",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "target | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "c13d7057dc33",
+        "59fa1525cac8"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | extra_var=no | family=twins",
+        "translation | extra_var=no | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "f14fa96f44a8",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "implication_open_hyp | weights=selberg_1d | demand=gt_half | have=eh | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.07075599999999997,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "2aefe0c893ad",
+        "5ec5f3b1c767",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=all | have=half | family=twins",
+        "bounded_gaps | weights=richer | moduli=all | demand=any_positive | have=half | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "COMBINE",
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.04952919999999998,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "9cba68cf3624",
+        "5e7f3d62b44b",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "level_of_distribution | moduli=smooth | have=half | family=twins",
+        "bounded_gaps | weights=richer | moduli=smooth | demand=any_positive | have=half | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "COMBINE",
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.04705273999999998,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "1269c1e89929",
+        "641fdfd3364c",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | demand=gt_half | family=twins",
+        "weighted_detector | weights=richer | demand=any_positive | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.03891579999999999,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "c13d7057dc33",
+        "15a90ab96bc3",
+        "59fa1525cac8"
+      ],
+      "statements": [
+        "weighted_detector | weights=selberg_1d | extra_var=no | family=twins",
+        "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=twins",
+        "translation | extra_var=no | family=twins"
+      ],
+      "moves": [
+        "ENRICH_DETECTOR",
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.03891579999999999,
+      "end_confidence": 0.26599999999999996
+    },
+    {
+      "node_ids": [
+        "f14fa96f44a8",
+        "646ff6357bfe",
+        "6f9a8be6b6f0"
+      ],
+      "statements": [
+        "implication_open_hyp | weights=selberg_1d | demand=gt_half | have=eh | family=twins",
+        "bounded_gaps | weights=selberg_1d | demand=gt_half | have=eh | conditional | family=twins",
+        "translation | family=twins"
+      ],
+      "moves": [
+        "ASSUME_OPEN",
+        "TRANSLATE"
+      ],
+      "end_pred": "translation",
+      "end_status": "checked_translation",
+      "end_conditional": false,
+      "score": 0.028302399999999995,
+      "end_confidence": 0.26599999999999996
+    }
+  ],
+  "n_paths": 72,
+  "gates": {
+    "C1_nodes_exist": true,
+    "C1_paths_exist": true,
+    "C2_gold_beats_bad": true,
+    "C3_no_false_hold": true,
+    "C5_partials_kept": true,
+    "n_enrich_paths": 12,
+    "n_support_paths": 8,
+    "n_bad_paths": 16,
+    "best_gold_score": 0.027241059999999994,
+    "best_bad_score": 0.019811679999999995,
+    "n_extra_sketches": 14,
+    "n_checks": 11,
+    "PASS": true
+  },
+  "C4_no_leakage": true,
+  "leakage_hits": [],
+  "PASS": true
+}

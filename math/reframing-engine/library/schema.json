@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "description": "DAG of lemma-shaped claims. Nodes merge on claim.equiv_key. Edges are cheap moves. Status is seed|sketched|checked_*.",
+  "node": {
+    "id": "sha1(equiv_key)[:12]",
+    "claim": {
+      "pred": "target|weighted_detector|level_of_distribution|implication_open_hyp|almost_primes|heuristic|heuristic_target|prime_values|translation|relative_density|sketch_start",
+      "weight_family": "na|none|indicator|selberg_1d|richer",
+      "moduli": "na|all|smooth",
+      "level_demand": "na|gt_half|half|any_positive",
+      "level_have": "na|none|half|gt_half_smooth|eh",
+      "extra_var": "na|yes|no",
+      "conditional": "bool",
+      "barrier": "na|parity|no_extra_variable",
+      "family": "na|twins|n2plus1|x2y4|two_squares|linear"
+    },
+    "kind": "seed|sketch|target|start",
+    "status": "seed|sketched|checked_hold|checked_fail|checked_barrier|checked_unknown|checked_translation",
+    "confidence": "float 0-1"
+  },
+  "edge": {
+    "id": "sha1(src|move|dst)[:12]",
+    "move": "ENRICH_DETECTOR|CHANGE_SUPPORT|COMBINE|ASSUME_OPEN|TYPE_I_ONLY|HEURISTIC_CLOSE|SPECIALIZE|ENLARGE|TRANSLATE|RELATIVE_AMBIENT"
+  }
+}

@@ -1,0 +1,2308 @@
+{
+  "schema_version": 1,
+  "card_id": "boundedgaps_2012",
+  "year_cutoff": 2012,
+  "nodes": [
+    {
+      "id": "045e5aa0fe2a",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "smooth",
+        "level_demand": "na",
+        "level_have": "gt_half_smooth",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "level_of_distribution | moduli=smooth | have=gt_half_smooth | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.5,
+      "prior_confidence": 0.5,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d0:2aefe0c893ad:CHANGE_SUPPORT:1"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "0b32546375e5",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "indicator",
+        "moduli": "smooth",
+        "level_demand": "gt_half",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=indicator | moduli=smooth | demand=gt_half | have=half | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"half\",\"moduli\":\"smooth\",\"pred\":\"bounded_gaps\",\"weight_family\":\"indicator\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.28,
+      "prior_confidence": 0.28,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d0:9cba68cf3624:COMBINE:3"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "0b5ef29a6528",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "parity",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=selberg_1d | extra_var=no | barrier=parity | family=twins",
+      "equiv_key": "{\"barrier\":\"parity\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"bounded_gaps\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0384,
+      "prior_confidence": 0.32,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d0:1269c1e89929:TYPE_I_ONLY:3",
+        "sketch:d0:c13d7057dc33:TYPE_I_ONLY:3"
+      ],
+      "check_note": "Type I / indicator detection of primes hits the parity barrier.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "1269c1e89929",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "weighted_detector | weights=selberg_1d | demand=gt_half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.85,
+      "prior_confidence": 0.85,
+      "year_available": 2005,
+      "sources": [
+        "seed:gpy_weights",
+        "reframe:bilinear_forms_type_II:WEIGHTS",
+        "reframe:half_dimensional_sieve:WEIGHTS",
+        "reframe:switching_principle:WEIGHTS",
+        "reframe:well_factorable_moduli:WEIGHTS"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "15a90ab96bc3",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "richer",
+        "moduli": "na",
+        "level_demand": "any_positive",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.55,
+      "prior_confidence": 0.55,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:c13d7057dc33:ENRICH_DETECTOR:0"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "1bc90902588b",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "indicator",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "weighted_detector | weights=indicator | demand=gt_half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"indicator\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.4,
+      "prior_confidence": 0.4,
+      "year_available": 1919,
+      "sources": [
+        "seed:raw_indicator"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "1c7dc7328e61",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "prime_values | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.408,
+      "prior_confidence": 0.48,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:ENLARGE:0",
+        "sketch:d2:3488b81a7212:ENLARGE:0",
+        "sketch:d2:b72b1c496561:ENLARGE:0"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "2aefe0c893ad",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "all",
+        "level_demand": "na",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "level_of_distribution | moduli=all | have=half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.9,
+      "prior_confidence": 0.9,
+      "year_available": 1965,
+      "sources": [
+        "seed:bv_half",
+        "reframe:well_factorable_moduli:RESTRICTED_SUPPORT"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "34030e57f00d",
+      "claim": {
+        "pred": "sketch_start",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "sketch_start | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"sketch_start\",\"weight_family\":\"na\"}",
+      "kind": "start",
+      "status": "sketched",
+      "confidence": 0.71,
+      "prior_confidence": 0.71,
+      "year_available": 1970,
+      "sources": [
+        "reframe:bilinear_forms_type_II:DETECT",
+        "reframe:half_dimensional_sieve:DETECT",
+        "reframe:well_factorable_moduli:DETECT",
+        "reframe:additive_energy:DETECT",
+        "reframe:elliptic_curves:DETECT",
+        "reframe:etale_cohomology:DETECT",
+        "reframe:expander_graphs:DETECT",
+        "reframe:function_field_analogs:DETECT"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "3488b81a7212",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "relative_density | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:RELATIVE_AMBIENT:2"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "4adc69f96e71",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "selberg_1d",
+        "moduli": "smooth",
+        "level_demand": "gt_half",
+        "level_have": "gt_half_smooth",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=selberg_1d | moduli=smooth | demand=gt_half | have=gt_half_smooth | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"bounded_gaps\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.42,
+      "prior_confidence": 0.42,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:2"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "533c2d17b641",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "richer",
+        "moduli": "all",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"bounded_gaps\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "checked_unknown",
+      "confidence": 0.6649999999999999,
+      "prior_confidence": 0.7,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d1:15a90ab96bc3:COMBINE:0"
+      ],
+      "check_note": "Detector-enrichment plus existing level 1/2 would close the target if the enrichment worked. Not held.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "59fa1525cac8",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "translation | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1919,
+      "sources": [
+        "sketch:d0:8f4726dab312:TRANSLATE:0",
+        "sketch:d0:c13d7057dc33:TRANSLATE:1",
+        "sketch:d1:0b5ef29a6528:TRANSLATE:0",
+        "sketch:d1:15a90ab96bc3:TRANSLATE:3",
+        "sketch:d1:63e6b65155a6:SPECIALIZE:0",
+        "sketch:d1:e940beea392b:TRANSLATE:0",
+        "sketch:d1:efe9dddc5bad:TRANSLATE:0",
+        "sketch:d2:533c2d17b641:TRANSLATE:0",
+        "sketch:d2:63e6b65155a6:SPECIALIZE:0",
+        "sketch:d2:7c9875c686f3:TRANSLATE:0",
+        "sketch:d2:deab12510e0a:TRANSLATE:0",
+        "sketch:d2:e940beea392b:TRANSLATE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "5b978a2cbc0d",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "no_extra_variable",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"no_extra_variable\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0264,
+      "prior_confidence": 0.22,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:63396a272ae7:SPECIALIZE:2",
+        "sketch:d2:1c7dc7328e61:SPECIALIZE:2"
+      ],
+      "check_note": "Specialising away the extra variable deletes the bilinear input.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "5e7f3d62b44b",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=richer | moduli=smooth | demand=any_positive | have=half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"smooth\",\"pred\":\"bounded_gaps\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "checked_unknown",
+      "confidence": 0.6649999999999999,
+      "prior_confidence": 0.7,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d0:9cba68cf3624:COMBINE:0",
+        "sketch:d1:641fdfd3364c:COMBINE:1"
+      ],
+      "check_note": "Detector-enrichment plus existing level 1/2 would close the target if the enrichment worked. Not held.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "5ec5f3b1c767",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "richer",
+        "moduli": "all",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=richer | moduli=all | demand=any_positive | have=half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"bounded_gaps\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d0:2aefe0c893ad:COMBINE:0",
+        "sketch:d1:641fdfd3364c:COMBINE:0"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "63396a272ae7",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "prime_values | extra_var=yes | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "start",
+      "status": "sketched",
+      "confidence": 0.6799999999999999,
+      "prior_confidence": 0.6799999999999999,
+      "year_available": 1970,
+      "sources": [
+        "reframe:bilinear_forms_type_II:EMBED"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "63e6b65155a6",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "translation | extra_var=yes | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:63396a272ae7:TRANSLATE:0",
+        "sketch:d1:f849bb6b118c:TRANSLATE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "641fdfd3364c",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "richer",
+        "moduli": "na",
+        "level_demand": "any_positive",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "weighted_detector | weights=richer | demand=any_positive | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.55,
+      "prior_confidence": 0.55,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d0:1269c1e89929:ENRICH_DETECTOR:0"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "646ff6357bfe",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "eh",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=selberg_1d | demand=gt_half | have=eh | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"eh\",\"moduli\":\"na\",\"pred\":\"bounded_gaps\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.4,
+      "prior_confidence": 0.4,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d0:f14fa96f44a8:ASSUME_OPEN:0"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "66e2ee388701",
+      "claim": {
+        "pred": "heuristic_target",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "heuristic_target | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"heuristic_target\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_fail",
+      "confidence": 0.075,
+      "prior_confidence": 0.3,
+      "year_available": 1936,
+      "sources": [
+        "sketch:d0:7fb366ef826b:HEURISTIC_CLOSE:2"
+      ],
+      "check_note": "A heuristic close is not a deduction. Flagged judgment.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "6f9a8be6b6f0",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "translation | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d0:1269c1e89929:TRANSLATE:1",
+        "sketch:d0:1bc90902588b:TRANSLATE:0",
+        "sketch:d0:2aefe0c893ad:TRANSLATE:2",
+        "sketch:d0:34030e57f00d:TRANSLATE:0",
+        "sketch:d0:7fb366ef826b:TRANSLATE:0",
+        "sketch:d0:9cba68cf3624:TRANSLATE:1",
+        "sketch:d0:a5ec98558f28:TRANSLATE:0",
+        "sketch:d0:f14fa96f44a8:TRANSLATE:1",
+        "sketch:d1:0b32546375e5:TRANSLATE:0",
+        "sketch:d1:5e7f3d62b44b:TRANSLATE:0",
+        "sketch:d1:5ec5f3b1c767:TRANSLATE:0",
+        "sketch:d1:641fdfd3364c:TRANSLATE:3",
+        "sketch:d1:646ff6357bfe:TRANSLATE:0",
+        "sketch:d1:66e2ee388701:TRANSLATE:0",
+        "sketch:d1:980f391690d1:TRANSLATE:0",
+        "sketch:d1:d5bc4c5511d1:TRANSLATE:0",
+        "sketch:d2:4adc69f96e71:TRANSLATE:0",
+        "sketch:d2:5e7f3d62b44b:TRANSLATE:0",
+        "sketch:d2:5ec5f3b1c767:TRANSLATE:0",
+        "sketch:d2:706f94d1fed2:TRANSLATE:0",
+        "sketch:d2:bc86b68474dd:TRANSLATE:0",
+        "sketch:d2:d5bc4c5511d1:TRANSLATE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "706f94d1fed2",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "gt_half_smooth",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"bounded_gaps\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.42,
+      "prior_confidence": 0.42,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:0",
+        "sketch:d1:641fdfd3364c:COMBINE:2"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "7c9875c686f3",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=richer | moduli=smooth | demand=any_positive | have=half | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"smooth\",\"pred\":\"bounded_gaps\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d1:15a90ab96bc3:COMBINE:1"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "7fb366ef826b",
+      "claim": {
+        "pred": "heuristic",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "heuristic | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"heuristic\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.35,
+      "prior_confidence": 0.35,
+      "year_available": 1936,
+      "sources": [
+        "seed:random_model"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "8f4726dab312",
+      "claim": {
+        "pred": "almost_primes",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "almost_primes | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"almost_primes\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.92,
+      "prior_confidence": 0.92,
+      "year_available": 1919,
+      "sources": [
+        "seed:almost_twins"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "980f391690d1",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "indicator",
+        "moduli": "all",
+        "level_demand": "gt_half",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=indicator | moduli=all | demand=gt_half | have=half | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"bounded_gaps\",\"weight_family\":\"indicator\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.28,
+      "prior_confidence": 0.28,
+      "year_available": 1965,
+      "sources": [
+        "sketch:d0:1bc90902588b:COMBINE:3"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "9cba68cf3624",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "smooth",
+        "level_demand": "na",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "level_of_distribution | moduli=smooth | have=half | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"half\",\"moduli\":\"smooth\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 1986,
+      "sources": [
+        "seed:well_factorable_setting"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "a5ec98558f28",
+      "claim": {
+        "pred": "target",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "target | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"target\",\"weight_family\":\"na\"}",
+      "kind": "target",
+      "status": "seed",
+      "confidence": 1.0,
+      "prior_confidence": 1.0,
+      "year_available": 1921,
+      "sources": [
+        "seed:target"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "b3e0d2ebabbc",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "relative_density | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d2:1c7dc7328e61:RELATIVE_AMBIENT:1"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "b72b1c496561",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "translation | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:TRANSLATE:1",
+        "sketch:d2:3488b81a7212:TRANSLATE:1"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "bc86b68474dd",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "indicator",
+        "moduli": "smooth",
+        "level_demand": "gt_half",
+        "level_have": "gt_half_smooth",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=indicator | moduli=smooth | demand=gt_half | have=gt_half_smooth | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"bounded_gaps\",\"weight_family\":\"indicator\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.42,
+      "prior_confidence": 0.42,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:1"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "c13d7057dc33",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "weighted_detector | weights=selberg_1d | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "start",
+      "status": "sketched",
+      "confidence": 0.71,
+      "prior_confidence": 0.71,
+      "year_available": 1970,
+      "sources": [
+        "reframe:bilinear_forms_type_II:BILINEAR",
+        "reframe:half_dimensional_sieve:BILINEAR",
+        "reframe:switching_principle:BILINEAR",
+        "reframe:well_factorable_moduli:BILINEAR",
+        "reframe:additive_energy:BILINEAR",
+        "reframe:expander_graphs:BILINEAR"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "d5bc4c5511d1",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "relative_density | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 2005,
+      "sources": [
+        "sketch:d0:1269c1e89929:RELATIVE_AMBIENT:2",
+        "sketch:d0:1bc90902588b:RELATIVE_AMBIENT:1",
+        "sketch:d0:2aefe0c893ad:RELATIVE_AMBIENT:3",
+        "sketch:d0:34030e57f00d:RELATIVE_AMBIENT:1",
+        "sketch:d0:7fb366ef826b:RELATIVE_AMBIENT:1",
+        "sketch:d0:9cba68cf3624:RELATIVE_AMBIENT:2",
+        "sketch:d0:a5ec98558f28:RELATIVE_AMBIENT:1",
+        "sketch:d0:f14fa96f44a8:RELATIVE_AMBIENT:2",
+        "sketch:d1:0b32546375e5:RELATIVE_AMBIENT:1",
+        "sketch:d1:5e7f3d62b44b:RELATIVE_AMBIENT:1",
+        "sketch:d1:5ec5f3b1c767:RELATIVE_AMBIENT:1",
+        "sketch:d1:646ff6357bfe:RELATIVE_AMBIENT:1",
+        "sketch:d1:66e2ee388701:RELATIVE_AMBIENT:1",
+        "sketch:d1:980f391690d1:RELATIVE_AMBIENT:1",
+        "sketch:d2:4adc69f96e71:RELATIVE_AMBIENT:1",
+        "sketch:d2:5e7f3d62b44b:RELATIVE_AMBIENT:1",
+        "sketch:d2:5ec5f3b1c767:RELATIVE_AMBIENT:1",
+        "sketch:d2:706f94d1fed2:RELATIVE_AMBIENT:1",
+        "sketch:d2:bc86b68474dd:RELATIVE_AMBIENT:1"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "deab12510e0a",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "gt_half_smooth",
+        "extra_var": "no",
+        "conditional": true,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"any_positive\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"bounded_gaps\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.42,
+      "prior_confidence": 0.42,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:3",
+        "sketch:d1:15a90ab96bc3:COMBINE:2"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "e940beea392b",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "relative_density | extra_var=no | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1919,
+      "sources": [
+        "sketch:d0:8f4726dab312:RELATIVE_AMBIENT:1",
+        "sketch:d0:c13d7057dc33:RELATIVE_AMBIENT:2",
+        "sketch:d1:0b5ef29a6528:RELATIVE_AMBIENT:1",
+        "sketch:d1:efe9dddc5bad:RELATIVE_AMBIENT:1",
+        "sketch:d1:f849bb6b118c:SPECIALIZE:1",
+        "sketch:d2:533c2d17b641:RELATIVE_AMBIENT:1",
+        "sketch:d2:7c9875c686f3:RELATIVE_AMBIENT:1",
+        "sketch:d2:deab12510e0a:RELATIVE_AMBIENT:1"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "efe9dddc5bad",
+      "claim": {
+        "pred": "bounded_gaps",
+        "weight_family": "indicator",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "parity",
+        "family": "twins"
+      },
+      "statement": "bounded_gaps | weights=indicator | extra_var=no | barrier=parity | family=twins",
+      "equiv_key": "{\"barrier\":\"parity\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"bounded_gaps\",\"weight_family\":\"indicator\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0384,
+      "prior_confidence": 0.32,
+      "year_available": 1919,
+      "sources": [
+        "sketch:d0:1bc90902588b:TYPE_I_ONLY:2",
+        "sketch:d0:8f4726dab312:TYPE_I_ONLY:2"
+      ],
+      "check_note": "Type I / indicator detection of primes hits the parity barrier.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "f14fa96f44a8",
+      "claim": {
+        "pred": "implication_open_hyp",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "eh",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "implication_open_hyp | weights=selberg_1d | demand=gt_half | have=eh | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"twins\",\"level_demand\":\"gt_half\",\"level_have\":\"eh\",\"moduli\":\"na\",\"pred\":\"implication_open_hyp\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.88,
+      "prior_confidence": 0.88,
+      "year_available": 2005,
+      "sources": [
+        "seed:open_hyp_implies_target"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "f2bff31f2baa",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "translation | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d2:1c7dc7328e61:TRANSLATE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "boundedgaps_2012"
+    },
+    {
+      "id": "f849bb6b118c",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "twins"
+      },
+      "statement": "relative_density | extra_var=yes | family=twins",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"twins\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:63396a272ae7:RELATIVE_AMBIENT:1"
+      ],
+      "check_note": "",
+      "card_id": "boundedgaps_2012"
+    }
+  ],
+  "edges": [
+    {
+      "id": "07cc84429dba",
+      "src": "2aefe0c893ad",
+      "dst": "045e5aa0fe2a",
+      "move": "CHANGE_SUPPORT",
+      "confidence": 0.5,
+      "status": "sketched",
+      "reason": "Averages on a thinner well-factorable support are often cheaper.",
+      "sources": [
+        "sketch:d0:2aefe0c893ad:CHANGE_SUPPORT:1"
+      ]
+    },
+    {
+      "id": "09f26ac4299e",
+      "src": "c13d7057dc33",
+      "dst": "15a90ab96bc3",
+      "move": "ENRICH_DETECTOR",
+      "confidence": 0.55,
+      "status": "sketched",
+      "reason": "Richer detector class may lower the distribution demand.",
+      "sources": [
+        "sketch:d0:c13d7057dc33:ENRICH_DETECTOR:0"
+      ]
+    },
+    {
+      "id": "0b1916343c37",
+      "src": "1bc90902588b",
+      "dst": "efe9dddc5bad",
+      "move": "TYPE_I_ONLY",
+      "confidence": 0.0384,
+      "status": "checked_barrier",
+      "reason": "Detect primes from Type I / indicator information only.",
+      "sources": [
+        "sketch:d0:1bc90902588b:TYPE_I_ONLY:2"
+      ]
+    },
+    {
+      "id": "12943c8987e2",
+      "src": "1c7dc7328e61",
+      "dst": "5b978a2cbc0d",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d2:1c7dc7328e61:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "17b663f99485",
+      "src": "34030e57f00d",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:34030e57f00d:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "191188bf44ce",
+      "src": "f14fa96f44a8",
+      "dst": "646ff6357bfe",
+      "move": "ASSUME_OPEN",
+      "confidence": 0.4,
+      "status": "sketched",
+      "reason": "Assume the open hypothesis in the implication; climb is conditional.",
+      "sources": [
+        "sketch:d0:f14fa96f44a8:ASSUME_OPEN:0"
+      ]
+    },
+    {
+      "id": "1b8d82808253",
+      "src": "4adc69f96e71",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:4adc69f96e71:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "1d809eada849",
+      "src": "7fb366ef826b",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:7fb366ef826b:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "1e349526c210",
+      "src": "646ff6357bfe",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:646ff6357bfe:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "204cc99bc377",
+      "src": "63e6b65155a6",
+      "dst": "59fa1525cac8",
+      "move": "SPECIALIZE",
+      "confidence": 0.154,
+      "status": "checked_translation",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:63e6b65155a6:SPECIALIZE:0",
+        "sketch:d2:63e6b65155a6:SPECIALIZE:0"
+      ]
+    },
+    {
+      "id": "20a67af1ead0",
+      "src": "646ff6357bfe",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:646ff6357bfe:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "23941333fadc",
+      "src": "8f4726dab312",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:8f4726dab312:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "23bd86bd538f",
+      "src": "3488b81a7212",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d2:3488b81a7212:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "26f60d590ba4",
+      "src": "63396a272ae7",
+      "dst": "f849bb6b118c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:63396a272ae7:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "2705f95f8e7f",
+      "src": "66e2ee388701",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:66e2ee388701:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "27c31e62b6cb",
+      "src": "a5ec98558f28",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:a5ec98558f28:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "2849221ab379",
+      "src": "9cba68cf3624",
+      "dst": "0b32546375e5",
+      "move": "COMBINE",
+      "confidence": 0.28,
+      "status": "sketched",
+      "reason": "Combine detector 1bc90902588b with distribution 9cba68cf3624; meet=False.",
+      "sources": [
+        "sketch:d0:9cba68cf3624:COMBINE:3"
+      ]
+    },
+    {
+      "id": "28c804b185c2",
+      "src": "045e5aa0fe2a",
+      "dst": "bc86b68474dd",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 1bc90902588b with distribution 045e5aa0fe2a; meet=True.",
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:1"
+      ]
+    },
+    {
+      "id": "2a0421f5d64a",
+      "src": "63396a272ae7",
+      "dst": "63e6b65155a6",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:63396a272ae7:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "2c06713e263f",
+      "src": "641fdfd3364c",
+      "dst": "5ec5f3b1c767",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 641fdfd3364c with distribution 2aefe0c893ad; meet=True.",
+      "sources": [
+        "sketch:d1:641fdfd3364c:COMBINE:0"
+      ]
+    },
+    {
+      "id": "2e03f8ba57fb",
+      "src": "533c2d17b641",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:533c2d17b641:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "2e475eb82ee7",
+      "src": "15a90ab96bc3",
+      "dst": "7c9875c686f3",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 15a90ab96bc3 with distribution 9cba68cf3624; meet=True.",
+      "sources": [
+        "sketch:d1:15a90ab96bc3:COMBINE:1"
+      ]
+    },
+    {
+      "id": "2e6c54883493",
+      "src": "63396a272ae7",
+      "dst": "5b978a2cbc0d",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d0:63396a272ae7:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "3422990e6e79",
+      "src": "5b978a2cbc0d",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "37741dea9d32",
+      "src": "1bc90902588b",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:1bc90902588b:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "3943834a9e05",
+      "src": "d5bc4c5511d1",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:d5bc4c5511d1:TRANSLATE:0",
+        "sketch:d2:d5bc4c5511d1:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "3a0b6ffdc1ff",
+      "src": "045e5aa0fe2a",
+      "dst": "706f94d1fed2",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 641fdfd3364c with distribution 045e5aa0fe2a; meet=True.",
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:0"
+      ]
+    },
+    {
+      "id": "3f74f093e65b",
+      "src": "7c9875c686f3",
+      "dst": "e940beea392b",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:7c9875c686f3:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "40f4bf09caff",
+      "src": "c13d7057dc33",
+      "dst": "e940beea392b",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:c13d7057dc33:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "4453446fc5cf",
+      "src": "2aefe0c893ad",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:2aefe0c893ad:RELATIVE_AMBIENT:3"
+      ]
+    },
+    {
+      "id": "4652a1630816",
+      "src": "641fdfd3364c",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:641fdfd3364c:TRANSLATE:3"
+      ]
+    },
+    {
+      "id": "4985103184dd",
+      "src": "b72b1c496561",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d2:b72b1c496561:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "4e16b714c797",
+      "src": "bc86b68474dd",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:bc86b68474dd:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "504a71bca019",
+      "src": "8f4726dab312",
+      "dst": "e940beea392b",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:8f4726dab312:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "507d327e5b42",
+      "src": "2aefe0c893ad",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:2aefe0c893ad:TRANSLATE:2"
+      ]
+    },
+    {
+      "id": "51ea8a5abb1d",
+      "src": "5b978a2cbc0d",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "52418ecc45ef",
+      "src": "5b978a2cbc0d",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "5343ffd90fe7",
+      "src": "5ec5f3b1c767",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:5ec5f3b1c767:RELATIVE_AMBIENT:1",
+        "sketch:d2:5ec5f3b1c767:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "561c11a45a11",
+      "src": "a5ec98558f28",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:a5ec98558f28:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "59cf7bfdb62e",
+      "src": "9cba68cf3624",
+      "dst": "5e7f3d62b44b",
+      "move": "COMBINE",
+      "confidence": 0.6649999999999999,
+      "status": "checked_unknown",
+      "reason": "Combine detector 641fdfd3364c with distribution 9cba68cf3624; meet=True.",
+      "sources": [
+        "sketch:d0:9cba68cf3624:COMBINE:0"
+      ]
+    },
+    {
+      "id": "5b6b5a2505be",
+      "src": "1c7dc7328e61",
+      "dst": "f2bff31f2baa",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:1c7dc7328e61:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "5bec6529a215",
+      "src": "045e5aa0fe2a",
+      "dst": "deab12510e0a",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 15a90ab96bc3 with distribution 045e5aa0fe2a; meet=True.",
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:3"
+      ]
+    },
+    {
+      "id": "5ee69055ee2c",
+      "src": "5ec5f3b1c767",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:5ec5f3b1c767:TRANSLATE:0",
+        "sketch:d2:5ec5f3b1c767:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "637c3cb2db39",
+      "src": "f849bb6b118c",
+      "dst": "e940beea392b",
+      "move": "SPECIALIZE",
+      "confidence": 0.22,
+      "status": "sketched",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:f849bb6b118c:SPECIALIZE:1"
+      ]
+    },
+    {
+      "id": "67bd1141ec44",
+      "src": "f14fa96f44a8",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:f14fa96f44a8:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "6d53ba462563",
+      "src": "7c9875c686f3",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:7c9875c686f3:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "745eba7bc940",
+      "src": "1c7dc7328e61",
+      "dst": "b3e0d2ebabbc",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:1c7dc7328e61:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "748aa4c45a28",
+      "src": "66e2ee388701",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:66e2ee388701:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "758678ff1671",
+      "src": "7fb366ef826b",
+      "dst": "66e2ee388701",
+      "move": "HEURISTIC_CLOSE",
+      "confidence": 0.075,
+      "status": "checked_fail",
+      "reason": "Close the problem by a random-model or RH-quality heuristic.",
+      "sources": [
+        "sketch:d0:7fb366ef826b:HEURISTIC_CLOSE:2"
+      ]
+    },
+    {
+      "id": "780069694fec",
+      "src": "5e7f3d62b44b",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:5e7f3d62b44b:RELATIVE_AMBIENT:1",
+        "sketch:d2:5e7f3d62b44b:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "7de2b3cee85b",
+      "src": "deab12510e0a",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:deab12510e0a:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "8c61bc594797",
+      "src": "8f4726dab312",
+      "dst": "efe9dddc5bad",
+      "move": "TYPE_I_ONLY",
+      "confidence": 0.0384,
+      "status": "checked_barrier",
+      "reason": "Detect primes from Type I / indicator information only.",
+      "sources": [
+        "sketch:d0:8f4726dab312:TYPE_I_ONLY:2"
+      ]
+    },
+    {
+      "id": "8d019fcb0b34",
+      "src": "deab12510e0a",
+      "dst": "e940beea392b",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:deab12510e0a:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "8e38ee79814f",
+      "src": "980f391690d1",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:980f391690d1:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "8fedd55cc0be",
+      "src": "533c2d17b641",
+      "dst": "e940beea392b",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:533c2d17b641:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "90fd9cecbfd0",
+      "src": "0b32546375e5",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:0b32546375e5:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "942a6f28fe36",
+      "src": "9cba68cf3624",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:9cba68cf3624:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "985f40d7dc20",
+      "src": "4adc69f96e71",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:4adc69f96e71:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "990cd27d785e",
+      "src": "2aefe0c893ad",
+      "dst": "5ec5f3b1c767",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 641fdfd3364c with distribution 2aefe0c893ad; meet=True.",
+      "sources": [
+        "sketch:d0:2aefe0c893ad:COMBINE:0"
+      ]
+    },
+    {
+      "id": "9e9d47cadc65",
+      "src": "0b5ef29a6528",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:0b5ef29a6528:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "9fb90ce89cdd",
+      "src": "641fdfd3364c",
+      "dst": "706f94d1fed2",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 641fdfd3364c with distribution 045e5aa0fe2a; meet=True.",
+      "sources": [
+        "sketch:d1:641fdfd3364c:COMBINE:2"
+      ]
+    },
+    {
+      "id": "a3eacd4bd569",
+      "src": "e940beea392b",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:e940beea392b:TRANSLATE:0",
+        "sketch:d2:e940beea392b:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "a52e39fdb6d2",
+      "src": "efe9dddc5bad",
+      "dst": "e940beea392b",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:efe9dddc5bad:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "a5369f5c48f3",
+      "src": "3488b81a7212",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:3488b81a7212:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "a8a3a1604549",
+      "src": "c13d7057dc33",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:c13d7057dc33:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "ab6164fb7731",
+      "src": "f14fa96f44a8",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:f14fa96f44a8:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "ae542127d915",
+      "src": "1269c1e89929",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:1269c1e89929:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "afd97ad8e0c3",
+      "src": "1bc90902588b",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:1bc90902588b:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "b1b05615bb79",
+      "src": "980f391690d1",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:980f391690d1:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "b32b07f6f772",
+      "src": "9cba68cf3624",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:9cba68cf3624:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "b43ef0e520bf",
+      "src": "efe9dddc5bad",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:efe9dddc5bad:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "b66ca9ea2c61",
+      "src": "1269c1e89929",
+      "dst": "641fdfd3364c",
+      "move": "ENRICH_DETECTOR",
+      "confidence": 0.55,
+      "status": "sketched",
+      "reason": "Richer detector class may lower the distribution demand.",
+      "sources": [
+        "sketch:d0:1269c1e89929:ENRICH_DETECTOR:0"
+      ]
+    },
+    {
+      "id": "b78fced5830b",
+      "src": "0b5ef29a6528",
+      "dst": "e940beea392b",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:0b5ef29a6528:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "bc5029e38817",
+      "src": "1bc90902588b",
+      "dst": "980f391690d1",
+      "move": "COMBINE",
+      "confidence": 0.28,
+      "status": "sketched",
+      "reason": "Combine detector 1bc90902588b with distribution 2aefe0c893ad; meet=False.",
+      "sources": [
+        "sketch:d0:1bc90902588b:COMBINE:3"
+      ]
+    },
+    {
+      "id": "c1a03d00e5b2",
+      "src": "5e7f3d62b44b",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:5e7f3d62b44b:TRANSLATE:0",
+        "sketch:d2:5e7f3d62b44b:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "c42e782a4824",
+      "src": "34030e57f00d",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:34030e57f00d:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "cc3ca1645b4d",
+      "src": "1269c1e89929",
+      "dst": "0b5ef29a6528",
+      "move": "TYPE_I_ONLY",
+      "confidence": 0.0384,
+      "status": "checked_barrier",
+      "reason": "Detect primes from Type I / indicator information only.",
+      "sources": [
+        "sketch:d0:1269c1e89929:TYPE_I_ONLY:3"
+      ]
+    },
+    {
+      "id": "ce09e61f9bf2",
+      "src": "1269c1e89929",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:1269c1e89929:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "d7c92107c864",
+      "src": "706f94d1fed2",
+      "dst": "d5bc4c5511d1",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:706f94d1fed2:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "de7c82dbb726",
+      "src": "045e5aa0fe2a",
+      "dst": "4adc69f96e71",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 1269c1e89929 with distribution 045e5aa0fe2a; meet=True.",
+      "sources": [
+        "sketch:d1:045e5aa0fe2a:COMBINE:2"
+      ]
+    },
+    {
+      "id": "e0b780403063",
+      "src": "15a90ab96bc3",
+      "dst": "533c2d17b641",
+      "move": "COMBINE",
+      "confidence": 0.6649999999999999,
+      "status": "checked_unknown",
+      "reason": "Combine detector 15a90ab96bc3 with distribution 2aefe0c893ad; meet=True.",
+      "sources": [
+        "sketch:d1:15a90ab96bc3:COMBINE:0"
+      ]
+    },
+    {
+      "id": "e2bd080f2eb6",
+      "src": "bc86b68474dd",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:bc86b68474dd:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "e42c6b4c4760",
+      "src": "641fdfd3364c",
+      "dst": "5e7f3d62b44b",
+      "move": "COMBINE",
+      "confidence": 0.6649999999999999,
+      "status": "checked_unknown",
+      "reason": "Combine detector 641fdfd3364c with distribution 9cba68cf3624; meet=True.",
+      "sources": [
+        "sketch:d1:641fdfd3364c:COMBINE:1"
+      ]
+    },
+    {
+      "id": "e5cca643bcf3",
+      "src": "f849bb6b118c",
+      "dst": "63e6b65155a6",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:f849bb6b118c:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "e6973bd3400c",
+      "src": "7fb366ef826b",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:7fb366ef826b:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "eeac418ebc9a",
+      "src": "15a90ab96bc3",
+      "dst": "59fa1525cac8",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:15a90ab96bc3:TRANSLATE:3"
+      ]
+    },
+    {
+      "id": "f2b8e338b6f1",
+      "src": "706f94d1fed2",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:706f94d1fed2:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "fd7aef86f588",
+      "src": "c13d7057dc33",
+      "dst": "0b5ef29a6528",
+      "move": "TYPE_I_ONLY",
+      "confidence": 0.0384,
+      "status": "checked_barrier",
+      "reason": "Detect primes from Type I / indicator information only.",
+      "sources": [
+        "sketch:d0:c13d7057dc33:TYPE_I_ONLY:3"
+      ]
+    },
+    {
+      "id": "fe0a391743b8",
+      "src": "15a90ab96bc3",
+      "dst": "deab12510e0a",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 15a90ab96bc3 with distribution 045e5aa0fe2a; meet=True.",
+      "sources": [
+        "sketch:d1:15a90ab96bc3:COMBINE:2"
+      ]
+    },
+    {
+      "id": "fea1bd09556b",
+      "src": "0b32546375e5",
+      "dst": "6f9a8be6b6f0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:0b32546375e5:TRANSLATE:0"
+      ]
+    }
+  ],
+  "merge_log": [
+    "merged 1269c1e89929 sources+=['reframe:bilinear_forms_type_II:WEIGHTS'] conf 0.85->0.85",
+    "merged c13d7057dc33 sources+=['reframe:half_dimensional_sieve:BILINEAR'] conf 0.71->0.71",
+    "merged 34030e57f00d sources+=['reframe:half_dimensional_sieve:DETECT'] conf 0.71->0.71",
+    "merged 1269c1e89929 sources+=['reframe:half_dimensional_sieve:WEIGHTS'] conf 0.85->0.85",
+    "merged c13d7057dc33 sources+=['reframe:switching_principle:BILINEAR'] conf 0.71->0.71",
+    "merged 1269c1e89929 sources+=['reframe:switching_principle:WEIGHTS'] conf 0.85->0.85",
+    "merged c13d7057dc33 sources+=['reframe:well_factorable_moduli:BILINEAR'] conf 0.71->0.71",
+    "merged 34030e57f00d sources+=['reframe:well_factorable_moduli:DETECT'] conf 0.71->0.71",
+    "merged 2aefe0c893ad sources+=['reframe:well_factorable_moduli:RESTRICTED_SUPPORT'] conf 0.9->0.9",
+    "merged 1269c1e89929 sources+=['reframe:well_factorable_moduli:WEIGHTS'] conf 0.85->0.85",
+    "merged c13d7057dc33 sources+=['reframe:additive_energy:BILINEAR'] conf 0.71->0.71",
+    "merged 34030e57f00d sources+=['reframe:additive_energy:DETECT'] conf 0.71->0.71",
+    "merged 34030e57f00d sources+=['reframe:elliptic_curves:DETECT'] conf 0.71->0.71",
+    "merged 34030e57f00d sources+=['reframe:etale_cohomology:DETECT'] conf 0.71->0.71",
+    "merged c13d7057dc33 sources+=['reframe:expander_graphs:BILINEAR'] conf 0.71->0.71",
+    "merged 34030e57f00d sources+=['reframe:expander_graphs:DETECT'] conf 0.71->0.71",
+    "merged 34030e57f00d sources+=['reframe:function_field_analogs:DETECT'] conf 0.71->0.71",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d0:1bc90902588b:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d0:1bc90902588b:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d0:2aefe0c893ad:TRANSLATE:2'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d0:2aefe0c893ad:RELATIVE_AMBIENT:3'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d0:34030e57f00d:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d0:34030e57f00d:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d0:7fb366ef826b:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d0:7fb366ef826b:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged efe9dddc5bad sources+=['sketch:d0:8f4726dab312:TYPE_I_ONLY:2'] conf 0.32->0.32",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d0:9cba68cf3624:TRANSLATE:1'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d0:9cba68cf3624:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d0:a5ec98558f28:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d0:a5ec98558f28:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 59fa1525cac8 sources+=['sketch:d0:c13d7057dc33:TRANSLATE:1'] conf 0.38->0.38",
+    "merged e940beea392b sources+=['sketch:d0:c13d7057dc33:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 0b5ef29a6528 sources+=['sketch:d0:c13d7057dc33:TYPE_I_ONLY:3'] conf 0.32->0.32",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d0:f14fa96f44a8:TRANSLATE:1'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d0:f14fa96f44a8:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:0b32546375e5:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d1:0b32546375e5:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 59fa1525cac8 sources+=['sketch:d1:0b5ef29a6528:TRANSLATE:0'] conf 0.38->0.38",
+    "merged e940beea392b sources+=['sketch:d1:0b5ef29a6528:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged deab12510e0a sources+=['sketch:d1:15a90ab96bc3:COMBINE:2'] conf 0.42->0.42",
+    "merged 59fa1525cac8 sources+=['sketch:d1:15a90ab96bc3:TRANSLATE:3'] conf 0.38->0.38",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:5e7f3d62b44b:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d1:5e7f3d62b44b:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:5ec5f3b1c767:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d1:5ec5f3b1c767:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 59fa1525cac8 sources+=['sketch:d1:63e6b65155a6:SPECIALIZE:0'] conf 0.38->0.38",
+    "merged 5ec5f3b1c767 sources+=['sketch:d1:641fdfd3364c:COMBINE:0'] conf 0.7->0.7",
+    "merged 5e7f3d62b44b sources+=['sketch:d1:641fdfd3364c:COMBINE:1'] conf 0.7->0.7",
+    "merged 706f94d1fed2 sources+=['sketch:d1:641fdfd3364c:COMBINE:2'] conf 0.42->0.42",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:641fdfd3364c:TRANSLATE:3'] conf 0.38->0.38",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:646ff6357bfe:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d1:646ff6357bfe:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:66e2ee388701:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d1:66e2ee388701:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:980f391690d1:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d1:980f391690d1:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d1:d5bc4c5511d1:TRANSLATE:0'] conf 0.38->0.38",
+    "merged 59fa1525cac8 sources+=['sketch:d1:e940beea392b:TRANSLATE:0'] conf 0.38->0.38",
+    "merged 59fa1525cac8 sources+=['sketch:d1:efe9dddc5bad:TRANSLATE:0'] conf 0.38->0.38",
+    "merged e940beea392b sources+=['sketch:d1:efe9dddc5bad:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 63e6b65155a6 sources+=['sketch:d1:f849bb6b118c:TRANSLATE:0'] conf 0.38->0.38",
+    "merged e940beea392b sources+=['sketch:d1:f849bb6b118c:SPECIALIZE:1'] conf 0.34->0.34",
+    "merged 5b978a2cbc0d sources+=['sketch:d2:1c7dc7328e61:SPECIALIZE:2'] conf 0.22->0.22",
+    "merged 1c7dc7328e61 sources+=['sketch:d2:3488b81a7212:ENLARGE:0'] conf 0.48->0.48",
+    "merged b72b1c496561 sources+=['sketch:d2:3488b81a7212:TRANSLATE:1'] conf 0.38->0.38",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d2:4adc69f96e71:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d2:4adc69f96e71:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 59fa1525cac8 sources+=['sketch:d2:533c2d17b641:TRANSLATE:0'] conf 0.38->0.38",
+    "merged e940beea392b sources+=['sketch:d2:533c2d17b641:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d2:5e7f3d62b44b:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d2:5e7f3d62b44b:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d2:5ec5f3b1c767:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d2:5ec5f3b1c767:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 59fa1525cac8 sources+=['sketch:d2:63e6b65155a6:SPECIALIZE:0'] conf 0.38->0.38",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d2:706f94d1fed2:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d2:706f94d1fed2:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 59fa1525cac8 sources+=['sketch:d2:7c9875c686f3:TRANSLATE:0'] conf 0.38->0.38",
+    "merged e940beea392b sources+=['sketch:d2:7c9875c686f3:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d2:b72b1c496561:ENLARGE:0'] conf 0.48->0.48",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d2:bc86b68474dd:TRANSLATE:0'] conf 0.38->0.38",
+    "merged d5bc4c5511d1 sources+=['sketch:d2:bc86b68474dd:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 6f9a8be6b6f0 sources+=['sketch:d2:d5bc4c5511d1:TRANSLATE:0'] conf 0.38->0.38",
+    "merged 59fa1525cac8 sources+=['sketch:d2:deab12510e0a:TRANSLATE:0'] conf 0.38->0.38",
+    "merged e940beea392b sources+=['sketch:d2:deab12510e0a:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 59fa1525cac8 sources+=['sketch:d2:e940beea392b:TRANSLATE:0'] conf 0.38->0.38"
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "card_id": "landau_2026",
+  "year_cutoff": 2026,
+  "nodes": [
+    {
+      "id": "16ac7f60ebaa",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "weighted_detector | weights=selberg_1d | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 1978,
+      "sources": [
+        "seed:sieve_weights"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "1c7dc7328e61",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "prime_values | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.84,
+      "prior_confidence": 0.84,
+      "year_available": 1998,
+      "sources": [
+        "seed:enlarged_family"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "2b4536c1fa14",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "two_squares"
+      },
+      "statement": "prime_values | extra_var=yes | family=two_squares",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"two_squares\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.9,
+      "prior_confidence": 0.9,
+      "year_available": -100,
+      "sources": [
+        "seed:two_squares"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "3d6935022935",
+      "claim": {
+        "pred": "almost_primes",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "almost_primes | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"almost_primes\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.86,
+      "prior_confidence": 0.86,
+      "year_available": 1978,
+      "sources": [
+        "seed:p2"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "52fc586c27eb",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "linear"
+      },
+      "statement": "prime_values | extra_var=no | family=linear",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"linear\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.95,
+      "prior_confidence": 0.95,
+      "year_available": 1837,
+      "sources": [
+        "seed:dirichlet"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "b72b1c496561",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "translation | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.8,
+      "prior_confidence": 0.8,
+      "year_available": -100,
+      "sources": [
+        "seed:gaussian_line"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "e285607cdcbe",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "all",
+        "level_demand": "na",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "level_of_distribution | moduli=all | have=half | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.75,
+      "prior_confidence": 0.75,
+      "year_available": 1965,
+      "sources": [
+        "seed:bv"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "e8eaa4a8c312",
+      "claim": {
+        "pred": "heuristic",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "heuristic | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"heuristic\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.4,
+      "prior_confidence": 0.4,
+      "year_available": 1962,
+      "sources": [
+        "seed:bh"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "fd3eacbef3eb",
+      "claim": {
+        "pred": "target",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "target | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"target\",\"weight_family\":\"na\"}",
+      "kind": "target",
+      "status": "seed",
+      "confidence": 1.0,
+      "prior_confidence": 1.0,
+      "year_available": 1912,
+      "sources": [
+        "seed:target"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    }
+  ],
+  "edges": [],
+  "merge_log": []
+}

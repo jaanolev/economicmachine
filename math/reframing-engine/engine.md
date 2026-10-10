@@ -149,3 +149,11 @@ it does not guess a number.
 - It will not distinguish "Selberg weights" from "Type II bilinear forms"
   on the 1995 \(x^2+y^4\) card. That is a recorded fail.
 - Implication text is a template. Flagged judgment. Not a deduction.
+
+## 6. Climber (extension)
+
+See `climber.md`. Generator pairings become start nodes of a persistent
+DAG library (`library/`). A cheap move list sketches lemma-chains; a
+dated code check hits parity / specialization barriers; confidences
+recalibrate. Known-answer on the 2012 bounded-gaps card: **PASS, weak
+C2**. Landau: no progress.

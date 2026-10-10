@@ -1,0 +1,2992 @@
+{
+  "schema_version": 1,
+  "card_id": "landau_2026",
+  "year_cutoff": 2026,
+  "nodes": [
+    {
+      "id": "02eb8f240e39",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "indicator",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "no_extra_variable",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=indicator | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"no_extra_variable\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"indicator\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0264,
+      "prior_confidence": 0.22,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d2:9fe5598f0ac1:SPECIALIZE:2"
+      ],
+      "check_note": "Specialising away the extra variable deletes the bilinear input.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "137027db47d0",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "no_extra_variable",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"no_extra_variable\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0264,
+      "prior_confidence": 0.22,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d2:c64c55016da0:SPECIALIZE:2"
+      ],
+      "check_note": "Specialising away the extra variable deletes the bilinear input.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "16ac7f60ebaa",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "weighted_detector | weights=selberg_1d | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 1978,
+      "sources": [
+        "seed:sieve_weights"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "1768df022bdd",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "richer",
+        "moduli": "na",
+        "level_demand": "any_positive",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "weighted_detector | weights=richer | demand=any_positive | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.55,
+      "prior_confidence": 0.55,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d0:16ac7f60ebaa:ENRICH_DETECTOR:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "1963a7107ee6",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "weighted_detector | weights=selberg_1d | extra_var=yes | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "start",
+      "status": "sketched",
+      "confidence": 0.71,
+      "prior_confidence": 0.71,
+      "year_available": 1970,
+      "sources": [
+        "reframe:bilinear_forms_type_II:BILINEAR",
+        "reframe:switching_principle:BILINEAR",
+        "reframe:well_factorable_moduli:BILINEAR",
+        "reframe:additive_energy:BILINEAR",
+        "reframe:expander_graphs:BILINEAR",
+        "reframe:gowers_norms:BILINEAR"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "1c7dc7328e61",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "prime_values | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.84,
+      "prior_confidence": 0.84,
+      "year_available": 1998,
+      "sources": [
+        "seed:enlarged_family",
+        "reframe:bilinear_forms_type_II:EMBED",
+        "reframe:additive_energy:EMBED",
+        "reframe:elliptic_curves:EMBED",
+        "reframe:function_field_analogs:EMBED",
+        "sketch:d0:3d6935022935:ENLARGE:0",
+        "sketch:d0:52fc586c27eb:ENLARGE:0",
+        "sketch:d0:6d273356fa7b:ENLARGE:0",
+        "sketch:d0:b72b1c496561:ENLARGE:0",
+        "sketch:d0:e8eaa4a8c312:ENLARGE:0",
+        "sketch:d0:fd3eacbef3eb:ENLARGE:0",
+        "sketch:d1:3488b81a7212:ENLARGE:0",
+        "sketch:d1:5b978a2cbc0d:ENLARGE:0",
+        "sketch:d1:6e8b5f6427f1:ENLARGE:0",
+        "sketch:d1:909023f18703:ENLARGE:0",
+        "sketch:d1:9559525859c4:ENLARGE:0",
+        "sketch:d1:a81d13fa5b1c:ENLARGE:0",
+        "sketch:d1:b72b1c496561:ENLARGE:0",
+        "sketch:d2:3488b81a7212:ENLARGE:0",
+        "sketch:d2:5b978a2cbc0d:ENLARGE:0",
+        "sketch:d2:9559525859c4:ENLARGE:0",
+        "sketch:d2:a81d13fa5b1c:ENLARGE:0",
+        "sketch:d2:b72b1c496561:ENLARGE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "1cdc8feaa381",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "gt_half_smooth",
+        "extra_var": "no",
+        "conditional": true,
+        "barrier": "no_extra_variable",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | barrier=no_extra_variable | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"no_extra_variable\",\"conditional\":true,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0264,
+      "prior_confidence": 0.22,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d2:e052ab7ba49d:SPECIALIZE:2"
+      ],
+      "check_note": "Specialising away the extra variable deletes the bilinear input.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "2b4536c1fa14",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "two_squares"
+      },
+      "statement": "prime_values | extra_var=yes | family=two_squares",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"two_squares\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.9,
+      "prior_confidence": 0.9,
+      "year_available": -100,
+      "sources": [
+        "seed:two_squares"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "2dc5daafb989",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "two_squares"
+      },
+      "statement": "relative_density | extra_var=yes | family=two_squares",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"two_squares\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": -100,
+      "sources": [
+        "sketch:d0:2b4536c1fa14:RELATIVE_AMBIENT:1"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "3488b81a7212",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "relative_density | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d0:16ac7f60ebaa:RELATIVE_AMBIENT:3",
+        "sketch:d0:3d6935022935:RELATIVE_AMBIENT:2",
+        "sketch:d0:fd3eacbef3eb:RELATIVE_AMBIENT:2",
+        "sketch:d1:5b978a2cbc0d:RELATIVE_AMBIENT:2",
+        "sketch:d1:711f54d736ad:RELATIVE_AMBIENT:2",
+        "sketch:d1:71811f8d4ad9:RELATIVE_AMBIENT:2",
+        "sketch:d1:b9c54f5c3e41:SPECIALIZE:1",
+        "sketch:d1:c028f18701c7:RELATIVE_AMBIENT:2",
+        "sketch:d2:5b978a2cbc0d:RELATIVE_AMBIENT:2",
+        "sketch:d2:711f54d736ad:RELATIVE_AMBIENT:2",
+        "sketch:d2:7ad8cf5303e8:RELATIVE_AMBIENT:2",
+        "sketch:d2:b9c54f5c3e41:SPECIALIZE:1",
+        "sketch:d2:df527bb82abf:RELATIVE_AMBIENT:2",
+        "sketch:d2:edb3d24ee1c8:RELATIVE_AMBIENT:2"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "3d6935022935",
+      "claim": {
+        "pred": "almost_primes",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "almost_primes | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"almost_primes\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.86,
+      "prior_confidence": 0.86,
+      "year_available": 1978,
+      "sources": [
+        "seed:p2"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "462d7ba414c8",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "two_squares"
+      },
+      "statement": "relative_density | extra_var=no | family=two_squares",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"two_squares\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.22,
+      "prior_confidence": 0.22,
+      "year_available": -100,
+      "sources": [
+        "sketch:d1:2dc5daafb989:SPECIALIZE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "4b507cae4c24",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "all",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=yes | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.595,
+      "prior_confidence": 0.7,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:e285607cdcbe:COMBINE:2",
+        "sketch:d1:65149b17b78c:COMBINE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "52fc586c27eb",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "linear"
+      },
+      "statement": "prime_values | extra_var=no | family=linear",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"linear\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.95,
+      "prior_confidence": 0.95,
+      "year_available": 1837,
+      "sources": [
+        "seed:dirichlet"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "5b978a2cbc0d",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "no_extra_variable",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"no_extra_variable\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0264,
+      "prior_confidence": 0.22,
+      "year_available": 1998,
+      "sources": [
+        "sketch:d0:1c7dc7328e61:SPECIALIZE:2",
+        "sketch:d0:2b4536c1fa14:SPECIALIZE:2",
+        "sketch:d1:1c7dc7328e61:SPECIALIZE:2",
+        "sketch:d2:1c7dc7328e61:SPECIALIZE:2"
+      ],
+      "check_note": "Specialising away the extra variable deletes the bilinear input.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "5c1303c6d321",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "relative_density | extra_var=no | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.22,
+      "prior_confidence": 0.22,
+      "year_available": 1998,
+      "sources": [
+        "sketch:d1:b3e0d2ebabbc:SPECIALIZE:0",
+        "sketch:d2:b3e0d2ebabbc:SPECIALIZE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "638002728cd6",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "gt_half_smooth",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | conditional | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.42,
+      "prior_confidence": 0.42,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d1:6e8b5f6427f1:COMBINE:1",
+        "sketch:d1:9bdc78a53c67:COMBINE:2"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "65149b17b78c",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "richer",
+        "moduli": "na",
+        "level_demand": "any_positive",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "weighted_detector | weights=richer | demand=any_positive | extra_var=yes | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.55,
+      "prior_confidence": 0.55,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:1963a7107ee6:ENRICH_DETECTOR:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "6d273356fa7b",
+      "claim": {
+        "pred": "sketch_start",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "sketch_start | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"sketch_start\",\"weight_family\":\"na\"}",
+      "kind": "start",
+      "status": "sketched",
+      "confidence": 0.6799999999999999,
+      "prior_confidence": 0.6799999999999999,
+      "year_available": 1970,
+      "sources": [
+        "reframe:bilinear_forms_type_II:DETECT"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "6e8b5f6427f1",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "smooth",
+        "level_demand": "na",
+        "level_have": "gt_half_smooth",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "level_of_distribution | moduli=smooth | have=gt_half_smooth | conditional | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.5,
+      "prior_confidence": 0.5,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d0:e285607cdcbe:CHANGE_SUPPORT:3"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "6f8dfcb852a0",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "translation | extra_var=yes | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:1963a7107ee6:TRANSLATE:1",
+        "sketch:d1:4b507cae4c24:TRANSLATE:0",
+        "sketch:d1:65149b17b78c:TRANSLATE:2",
+        "sketch:d1:b9c54f5c3e41:TRANSLATE:0",
+        "sketch:d2:4b507cae4c24:TRANSLATE:0",
+        "sketch:d2:b9c54f5c3e41:TRANSLATE:0",
+        "sketch:d2:e052ab7ba49d:TRANSLATE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "70c57d13b5a7",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "translation | extra_var=no | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.154,
+      "prior_confidence": 0.22,
+      "year_available": 1998,
+      "sources": [
+        "sketch:d1:f2bff31f2baa:SPECIALIZE:0",
+        "sketch:d2:f2bff31f2baa:SPECIALIZE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "711f54d736ad",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "all",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d0:e285607cdcbe:COMBINE:1",
+        "sketch:d1:1768df022bdd:COMBINE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "71811f8d4ad9",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "parity",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=selberg_1d | extra_var=no | barrier=parity | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"parity\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0384,
+      "prior_confidence": 0.32,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:1963a7107ee6:TYPE_I_ONLY:3"
+      ],
+      "check_note": "Type I / indicator detection of primes hits the parity barrier.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "7ad8cf5303e8",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "no_extra_variable",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=selberg_1d | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"no_extra_variable\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0264,
+      "prior_confidence": 0.22,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d1:b2c4c6c50e4e:SPECIALIZE:2",
+        "sketch:d2:b2c4c6c50e4e:SPECIALIZE:2"
+      ],
+      "check_note": "Specialising away the extra variable deletes the bilinear input.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "7e192be76853",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "linear"
+      },
+      "statement": "relative_density | extra_var=no | family=linear",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"linear\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1837,
+      "sources": [
+        "sketch:d0:52fc586c27eb:RELATIVE_AMBIENT:2"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "897b247bbc54",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "gt_half",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "weighted_detector | weights=selberg_1d | demand=gt_half | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"gt_half\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "start",
+      "status": "sketched",
+      "confidence": 0.71,
+      "prior_confidence": 0.71,
+      "year_available": 1970,
+      "sources": [
+        "reframe:bilinear_forms_type_II:WEIGHTS",
+        "reframe:bombieri_vinogradov:WEIGHTS",
+        "reframe:hecke_grossencharacters:WEIGHTS",
+        "reframe:sieve_weights_selberg:WEIGHTS",
+        "reframe:switching_principle:WEIGHTS",
+        "reframe:well_factorable_moduli:WEIGHTS"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "909023f18703",
+      "claim": {
+        "pred": "heuristic_target",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "heuristic_target | conditional | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"heuristic_target\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_fail",
+      "confidence": 0.075,
+      "prior_confidence": 0.3,
+      "year_available": 1962,
+      "sources": [
+        "sketch:d0:e8eaa4a8c312:HEURISTIC_CLOSE:3"
+      ],
+      "check_note": "A heuristic close is not a deduction. Flagged judgment.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "9559525859c4",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "translation | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:6d273356fa7b:TRANSLATE:1",
+        "sketch:d0:897b247bbc54:TRANSLATE:2",
+        "sketch:d0:e8eaa4a8c312:TRANSLATE:1",
+        "sketch:d1:909023f18703:TRANSLATE:1",
+        "sketch:d1:9bdc78a53c67:TRANSLATE:3",
+        "sketch:d1:a81d13fa5b1c:TRANSLATE:1",
+        "sketch:d1:f012ab9cd6ea:TRANSLATE:1",
+        "sketch:d2:638002728cd6:TRANSLATE:1",
+        "sketch:d2:a81d13fa5b1c:TRANSLATE:1",
+        "sketch:d2:d4a0120898d8:TRANSLATE:1",
+        "sketch:d2:f012ab9cd6ea:TRANSLATE:1"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "9bdc78a53c67",
+      "claim": {
+        "pred": "weighted_detector",
+        "weight_family": "richer",
+        "moduli": "na",
+        "level_demand": "any_positive",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "weighted_detector | weights=richer | demand=any_positive | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"weighted_detector\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.55,
+      "prior_confidence": 0.55,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:897b247bbc54:ENRICH_DETECTOR:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "9fe5598f0ac1",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "indicator",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "prime_values | weights=indicator | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"indicator\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.408,
+      "prior_confidence": 0.48,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d1:c028f18701c7:ENLARGE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "a81d13fa5b1c",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "relative_density | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:6d273356fa7b:RELATIVE_AMBIENT:2",
+        "sketch:d0:897b247bbc54:RELATIVE_AMBIENT:3",
+        "sketch:d0:e8eaa4a8c312:RELATIVE_AMBIENT:2",
+        "sketch:d1:909023f18703:RELATIVE_AMBIENT:2",
+        "sketch:d1:f012ab9cd6ea:RELATIVE_AMBIENT:2",
+        "sketch:d2:638002728cd6:RELATIVE_AMBIENT:2",
+        "sketch:d2:d4a0120898d8:RELATIVE_AMBIENT:2",
+        "sketch:d2:f012ab9cd6ea:RELATIVE_AMBIENT:2"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "aa4520b9cba7",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "two_squares"
+      },
+      "statement": "translation | extra_var=yes | family=two_squares",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"two_squares\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": -100,
+      "sources": [
+        "sketch:d0:2b4536c1fa14:TRANSLATE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "ac8cc1021909",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "two_squares"
+      },
+      "statement": "translation | extra_var=no | family=two_squares",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"two_squares\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.154,
+      "prior_confidence": 0.22,
+      "year_available": -100,
+      "sources": [
+        "sketch:d1:aa4520b9cba7:SPECIALIZE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "b2c4c6c50e4e",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "selberg_1d",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "prime_values | weights=selberg_1d | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.408,
+      "prior_confidence": 0.48,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d0:16ac7f60ebaa:ENLARGE:1",
+        "sketch:d0:897b247bbc54:ENLARGE:1",
+        "sketch:d1:71811f8d4ad9:ENLARGE:0",
+        "sketch:d2:7ad8cf5303e8:ENLARGE:0",
+        "sketch:d2:d4a0120898d8:ENLARGE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "b3e0d2ebabbc",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "relative_density | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1998,
+      "sources": [
+        "sketch:d0:1c7dc7328e61:RELATIVE_AMBIENT:1",
+        "sketch:d1:1c7dc7328e61:RELATIVE_AMBIENT:1",
+        "sketch:d1:b2c4c6c50e4e:RELATIVE_AMBIENT:1",
+        "sketch:d2:1c7dc7328e61:RELATIVE_AMBIENT:1",
+        "sketch:d2:9fe5598f0ac1:RELATIVE_AMBIENT:1",
+        "sketch:d2:b2c4c6c50e4e:RELATIVE_AMBIENT:1",
+        "sketch:d2:c64c55016da0:RELATIVE_AMBIENT:1"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "b72b1c496561",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "translation | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.8,
+      "prior_confidence": 0.8,
+      "year_available": -100,
+      "sources": [
+        "seed:gaussian_line",
+        "sketch:d0:16ac7f60ebaa:TRANSLATE:2",
+        "sketch:d0:3d6935022935:TRANSLATE:1",
+        "sketch:d0:fd3eacbef3eb:TRANSLATE:1",
+        "sketch:d1:1768df022bdd:TRANSLATE:3",
+        "sketch:d1:3488b81a7212:TRANSLATE:1",
+        "sketch:d1:5b978a2cbc0d:TRANSLATE:1",
+        "sketch:d1:6f8dfcb852a0:SPECIALIZE:0",
+        "sketch:d1:711f54d736ad:TRANSLATE:1",
+        "sketch:d1:71811f8d4ad9:TRANSLATE:1",
+        "sketch:d1:c028f18701c7:TRANSLATE:1",
+        "sketch:d2:3488b81a7212:TRANSLATE:1",
+        "sketch:d2:5b978a2cbc0d:TRANSLATE:1",
+        "sketch:d2:6f8dfcb852a0:SPECIALIZE:0",
+        "sketch:d2:711f54d736ad:TRANSLATE:1",
+        "sketch:d2:7ad8cf5303e8:TRANSLATE:1",
+        "sketch:d2:df527bb82abf:TRANSLATE:1",
+        "sketch:d2:edb3d24ee1c8:TRANSLATE:1"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "b9c54f5c3e41",
+      "claim": {
+        "pred": "relative_density",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "relative_density | extra_var=yes | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"relative_density\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.34,
+      "prior_confidence": 0.34,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:1963a7107ee6:RELATIVE_AMBIENT:2",
+        "sketch:d1:4b507cae4c24:RELATIVE_AMBIENT:1",
+        "sketch:d1:65149b17b78c:RELATIVE_AMBIENT:3",
+        "sketch:d2:4b507cae4c24:RELATIVE_AMBIENT:1",
+        "sketch:d2:e052ab7ba49d:RELATIVE_AMBIENT:1"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "c028f18701c7",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "indicator",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "parity",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=indicator | extra_var=no | barrier=parity | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"parity\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"indicator\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0384,
+      "prior_confidence": 0.32,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d0:3d6935022935:TYPE_I_ONLY:3"
+      ],
+      "check_note": "Type I / indicator detection of primes hits the parity barrier.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "c64c55016da0",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "prime_values | weights=richer | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.408,
+      "prior_confidence": 0.48,
+      "year_available": 1978,
+      "sources": [
+        "sketch:d1:1768df022bdd:ENLARGE:1",
+        "sketch:d1:711f54d736ad:ENLARGE:0",
+        "sketch:d1:9bdc78a53c67:ENLARGE:1",
+        "sketch:d1:f012ab9cd6ea:ENLARGE:0",
+        "sketch:d2:638002728cd6:ENLARGE:0",
+        "sketch:d2:711f54d736ad:ENLARGE:0",
+        "sketch:d2:df527bb82abf:ENLARGE:0",
+        "sketch:d2:edb3d24ee1c8:ENLARGE:0",
+        "sketch:d2:f012ab9cd6ea:ENLARGE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "cf5d92ce44ce",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "linear"
+      },
+      "statement": "translation | extra_var=no | family=linear",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"linear\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1837,
+      "sources": [
+        "sketch:d0:52fc586c27eb:TRANSLATE:1"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "d4a0120898d8",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "selberg_1d",
+        "moduli": "smooth",
+        "level_demand": "gt_half",
+        "level_have": "gt_half_smooth",
+        "extra_var": "na",
+        "conditional": true,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=selberg_1d | moduli=smooth | demand=gt_half | have=gt_half_smooth | conditional | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"gt_half\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"prime_values\",\"weight_family\":\"selberg_1d\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.42,
+      "prior_confidence": 0.42,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d1:6e8b5f6427f1:COMBINE:2"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "df527bb82abf",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "gt_half_smooth",
+        "extra_var": "no",
+        "conditional": true,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=no | conditional | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.42,
+      "prior_confidence": 0.42,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d1:1768df022bdd:COMBINE:2",
+        "sketch:d1:6e8b5f6427f1:COMBINE:3"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "e052ab7ba49d",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "smooth",
+        "level_demand": "any_positive",
+        "level_have": "gt_half_smooth",
+        "extra_var": "yes",
+        "conditional": true,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=smooth | demand=any_positive | have=gt_half_smooth | extra_var=yes | conditional | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":true,\"extra_var\":\"yes\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"gt_half_smooth\",\"moduli\":\"smooth\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.357,
+      "prior_confidence": 0.42,
+      "year_available": 1986,
+      "sources": [
+        "sketch:d1:65149b17b78c:COMBINE:1"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "e285607cdcbe",
+      "claim": {
+        "pred": "level_of_distribution",
+        "weight_family": "na",
+        "moduli": "all",
+        "level_demand": "na",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "level_of_distribution | moduli=all | have=half | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"level_of_distribution\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.75,
+      "prior_confidence": 0.75,
+      "year_available": 1965,
+      "sources": [
+        "seed:bv",
+        "reframe:bombieri_vinogradov:RESTRICTED_SUPPORT",
+        "reframe:sieve_weights_selberg:RESTRICTED_SUPPORT",
+        "reframe:well_factorable_moduli:RESTRICTED_SUPPORT"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "e8eaa4a8c312",
+      "claim": {
+        "pred": "heuristic",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "heuristic | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"heuristic\",\"weight_family\":\"na\"}",
+      "kind": "seed",
+      "status": "seed",
+      "confidence": 0.4,
+      "prior_confidence": 0.4,
+      "year_available": 1962,
+      "sources": [
+        "seed:bh"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "edb3d24ee1c8",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "all",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "no_extra_variable",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | extra_var=no | barrier=no_extra_variable | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"no_extra_variable\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "checked_barrier",
+      "confidence": 0.0264,
+      "prior_confidence": 0.22,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d1:4b507cae4c24:SPECIALIZE:2",
+        "sketch:d2:4b507cae4c24:SPECIALIZE:2"
+      ],
+      "check_note": "Specialising away the extra variable deletes the bilinear input.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "f012ab9cd6ea",
+      "claim": {
+        "pred": "prime_values",
+        "weight_family": "richer",
+        "moduli": "all",
+        "level_demand": "any_positive",
+        "level_have": "half",
+        "extra_var": "na",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "prime_values | weights=richer | moduli=all | demand=any_positive | have=half | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"na\",\"family\":\"n2plus1\",\"level_demand\":\"any_positive\",\"level_have\":\"half\",\"moduli\":\"all\",\"pred\":\"prime_values\",\"weight_family\":\"richer\"}",
+      "kind": "sketch",
+      "status": "sketched",
+      "confidence": 0.7,
+      "prior_confidence": 0.7,
+      "year_available": 1970,
+      "sources": [
+        "sketch:d0:e285607cdcbe:COMBINE:0",
+        "sketch:d1:9bdc78a53c67:COMBINE:0"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "f2bff31f2baa",
+      "claim": {
+        "pred": "translation",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "yes",
+        "conditional": false,
+        "barrier": "na",
+        "family": "x2y4"
+      },
+      "statement": "translation | extra_var=yes | family=x2y4",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"yes\",\"family\":\"x2y4\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"translation\",\"weight_family\":\"na\"}",
+      "kind": "sketch",
+      "status": "checked_translation",
+      "confidence": 0.26599999999999996,
+      "prior_confidence": 0.38,
+      "year_available": 1998,
+      "sources": [
+        "sketch:d0:1c7dc7328e61:TRANSLATE:0",
+        "sketch:d1:1c7dc7328e61:TRANSLATE:0",
+        "sketch:d1:b2c4c6c50e4e:TRANSLATE:0",
+        "sketch:d2:1c7dc7328e61:TRANSLATE:0",
+        "sketch:d2:9fe5598f0ac1:TRANSLATE:0",
+        "sketch:d2:b2c4c6c50e4e:TRANSLATE:0",
+        "sketch:d2:c64c55016da0:TRANSLATE:0"
+      ],
+      "check_note": "Equivalence/dictionary holds as a rewrite; the thin set stays thin.",
+      "card_id": "landau_2026"
+    },
+    {
+      "id": "fd3eacbef3eb",
+      "claim": {
+        "pred": "target",
+        "weight_family": "na",
+        "moduli": "na",
+        "level_demand": "na",
+        "level_have": "na",
+        "extra_var": "no",
+        "conditional": false,
+        "barrier": "na",
+        "family": "n2plus1"
+      },
+      "statement": "target | extra_var=no | family=n2plus1",
+      "equiv_key": "{\"barrier\":\"na\",\"conditional\":false,\"extra_var\":\"no\",\"family\":\"n2plus1\",\"level_demand\":\"na\",\"level_have\":\"na\",\"moduli\":\"na\",\"pred\":\"target\",\"weight_family\":\"na\"}",
+      "kind": "target",
+      "status": "seed",
+      "confidence": 1.0,
+      "prior_confidence": 1.0,
+      "year_available": 1912,
+      "sources": [
+        "seed:target"
+      ],
+      "check_note": "",
+      "card_id": "landau_2026"
+    }
+  ],
+  "edges": [
+    {
+      "id": "11d85dfdc180",
+      "src": "638002728cd6",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:638002728cd6:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "12943c8987e2",
+      "src": "1c7dc7328e61",
+      "dst": "5b978a2cbc0d",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d0:1c7dc7328e61:SPECIALIZE:2",
+        "sketch:d1:1c7dc7328e61:SPECIALIZE:2",
+        "sketch:d2:1c7dc7328e61:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "14df5ee98878",
+      "src": "6e8b5f6427f1",
+      "dst": "df527bb82abf",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 1768df022bdd with distribution 6e8b5f6427f1; meet=True.",
+      "sources": [
+        "sketch:d1:6e8b5f6427f1:COMBINE:3"
+      ]
+    },
+    {
+      "id": "150161e554d1",
+      "src": "711f54d736ad",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:711f54d736ad:RELATIVE_AMBIENT:2",
+        "sketch:d2:711f54d736ad:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "17336daead99",
+      "src": "9fe5598f0ac1",
+      "dst": "02eb8f240e39",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d2:9fe5598f0ac1:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "191f4702242d",
+      "src": "711f54d736ad",
+      "dst": "c64c55016da0",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:711f54d736ad:ENLARGE:0",
+        "sketch:d2:711f54d736ad:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "1a4c788572d8",
+      "src": "4b507cae4c24",
+      "dst": "b9c54f5c3e41",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:4b507cae4c24:RELATIVE_AMBIENT:1",
+        "sketch:d2:4b507cae4c24:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "1b30a470f614",
+      "src": "1963a7107ee6",
+      "dst": "b9c54f5c3e41",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:1963a7107ee6:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "1eaf0491e798",
+      "src": "e8eaa4a8c312",
+      "dst": "909023f18703",
+      "move": "HEURISTIC_CLOSE",
+      "confidence": 0.075,
+      "status": "checked_fail",
+      "reason": "Close the problem by a random-model or RH-quality heuristic.",
+      "sources": [
+        "sketch:d0:e8eaa4a8c312:HEURISTIC_CLOSE:3"
+      ]
+    },
+    {
+      "id": "1f2914c72a7f",
+      "src": "e8eaa4a8c312",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:e8eaa4a8c312:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "1f715ea03d86",
+      "src": "f012ab9cd6ea",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:f012ab9cd6ea:TRANSLATE:1",
+        "sketch:d2:f012ab9cd6ea:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "1f7d563b70c2",
+      "src": "6e8b5f6427f1",
+      "dst": "d4a0120898d8",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 897b247bbc54 with distribution 6e8b5f6427f1; meet=True.",
+      "sources": [
+        "sketch:d1:6e8b5f6427f1:COMBINE:2"
+      ]
+    },
+    {
+      "id": "210074884d34",
+      "src": "f012ab9cd6ea",
+      "dst": "c64c55016da0",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:f012ab9cd6ea:ENLARGE:0",
+        "sketch:d2:f012ab9cd6ea:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "237e14dc08d2",
+      "src": "638002728cd6",
+      "dst": "c64c55016da0",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d2:638002728cd6:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "23bd86bd538f",
+      "src": "3488b81a7212",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:3488b81a7212:ENLARGE:0",
+        "sketch:d2:3488b81a7212:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "291161eb1695",
+      "src": "e052ab7ba49d",
+      "dst": "6f8dfcb852a0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:e052ab7ba49d:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "2a5d392a754f",
+      "src": "1963a7107ee6",
+      "dst": "65149b17b78c",
+      "move": "ENRICH_DETECTOR",
+      "confidence": 0.55,
+      "status": "sketched",
+      "reason": "Richer detector class may lower the distribution demand.",
+      "sources": [
+        "sketch:d0:1963a7107ee6:ENRICH_DETECTOR:0"
+      ]
+    },
+    {
+      "id": "2b8e6b726f88",
+      "src": "65149b17b78c",
+      "dst": "e052ab7ba49d",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 65149b17b78c with distribution 6e8b5f6427f1; meet=True.",
+      "sources": [
+        "sketch:d1:65149b17b78c:COMBINE:1"
+      ]
+    },
+    {
+      "id": "2bb62dd34954",
+      "src": "16ac7f60ebaa",
+      "dst": "1768df022bdd",
+      "move": "ENRICH_DETECTOR",
+      "confidence": 0.55,
+      "status": "sketched",
+      "reason": "Richer detector class may lower the distribution demand.",
+      "sources": [
+        "sketch:d0:16ac7f60ebaa:ENRICH_DETECTOR:0"
+      ]
+    },
+    {
+      "id": "2cbccd6ea0bd",
+      "src": "638002728cd6",
+      "dst": "a81d13fa5b1c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:638002728cd6:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "2ce574090d19",
+      "src": "e285607cdcbe",
+      "dst": "711f54d736ad",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 1768df022bdd with distribution e285607cdcbe; meet=True.",
+      "sources": [
+        "sketch:d0:e285607cdcbe:COMBINE:1"
+      ]
+    },
+    {
+      "id": "2f711eb69154",
+      "src": "2b4536c1fa14",
+      "dst": "2dc5daafb989",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:2b4536c1fa14:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "31126d321874",
+      "src": "9fe5598f0ac1",
+      "dst": "f2bff31f2baa",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:9fe5598f0ac1:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "3422990e6e79",
+      "src": "5b978a2cbc0d",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:ENLARGE:0",
+        "sketch:d2:5b978a2cbc0d:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "37d6870541c6",
+      "src": "4b507cae4c24",
+      "dst": "6f8dfcb852a0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:4b507cae4c24:TRANSLATE:0",
+        "sketch:d2:4b507cae4c24:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "3936415446ac",
+      "src": "3d6935022935",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:3d6935022935:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "3b0a22fb0def",
+      "src": "f012ab9cd6ea",
+      "dst": "a81d13fa5b1c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:f012ab9cd6ea:RELATIVE_AMBIENT:2",
+        "sketch:d2:f012ab9cd6ea:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "3e1578c57d72",
+      "src": "f2bff31f2baa",
+      "dst": "70c57d13b5a7",
+      "move": "SPECIALIZE",
+      "confidence": 0.154,
+      "status": "checked_translation",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:f2bff31f2baa:SPECIALIZE:0",
+        "sketch:d2:f2bff31f2baa:SPECIALIZE:0"
+      ]
+    },
+    {
+      "id": "3ec170c6b3c5",
+      "src": "c64c55016da0",
+      "dst": "f2bff31f2baa",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:c64c55016da0:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "46b55d805df8",
+      "src": "c64c55016da0",
+      "dst": "b3e0d2ebabbc",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:c64c55016da0:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "46bb13ba8966",
+      "src": "e285607cdcbe",
+      "dst": "f012ab9cd6ea",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 9bdc78a53c67 with distribution e285607cdcbe; meet=True.",
+      "sources": [
+        "sketch:d0:e285607cdcbe:COMBINE:0"
+      ]
+    },
+    {
+      "id": "48e728e90a27",
+      "src": "e8eaa4a8c312",
+      "dst": "a81d13fa5b1c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:e8eaa4a8c312:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "4985103184dd",
+      "src": "b72b1c496561",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:b72b1c496561:ENLARGE:0",
+        "sketch:d1:b72b1c496561:ENLARGE:0",
+        "sketch:d2:b72b1c496561:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "4b65ca4cbca2",
+      "src": "52fc586c27eb",
+      "dst": "7e192be76853",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:52fc586c27eb:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "4d1e137bbd76",
+      "src": "edb3d24ee1c8",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:edb3d24ee1c8:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "5021bc3fca2d",
+      "src": "909023f18703",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:909023f18703:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "51ea8a5abb1d",
+      "src": "5b978a2cbc0d",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:TRANSLATE:1",
+        "sketch:d2:5b978a2cbc0d:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "52418ecc45ef",
+      "src": "5b978a2cbc0d",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:5b978a2cbc0d:RELATIVE_AMBIENT:2",
+        "sketch:d2:5b978a2cbc0d:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "559cfdad8218",
+      "src": "b2c4c6c50e4e",
+      "dst": "7ad8cf5303e8",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:b2c4c6c50e4e:SPECIALIZE:2",
+        "sketch:d2:b2c4c6c50e4e:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "5b02f26ad1c0",
+      "src": "65149b17b78c",
+      "dst": "b9c54f5c3e41",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:65149b17b78c:RELATIVE_AMBIENT:3"
+      ]
+    },
+    {
+      "id": "5b6b5a2505be",
+      "src": "1c7dc7328e61",
+      "dst": "f2bff31f2baa",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:1c7dc7328e61:TRANSLATE:0",
+        "sketch:d1:1c7dc7328e61:TRANSLATE:0",
+        "sketch:d2:1c7dc7328e61:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "5bd47ecc194d",
+      "src": "897b247bbc54",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:897b247bbc54:TRANSLATE:2"
+      ]
+    },
+    {
+      "id": "5c5e952d6ef7",
+      "src": "b2c4c6c50e4e",
+      "dst": "f2bff31f2baa",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:b2c4c6c50e4e:TRANSLATE:0",
+        "sketch:d2:b2c4c6c50e4e:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "5d240fcd4b11",
+      "src": "9bdc78a53c67",
+      "dst": "638002728cd6",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 9bdc78a53c67 with distribution 6e8b5f6427f1; meet=True.",
+      "sources": [
+        "sketch:d1:9bdc78a53c67:COMBINE:2"
+      ]
+    },
+    {
+      "id": "5d8ec22a76ea",
+      "src": "71811f8d4ad9",
+      "dst": "b2c4c6c50e4e",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:71811f8d4ad9:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "61f4030763eb",
+      "src": "7ad8cf5303e8",
+      "dst": "b2c4c6c50e4e",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d2:7ad8cf5303e8:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "629f936c9e0d",
+      "src": "e285607cdcbe",
+      "dst": "6e8b5f6427f1",
+      "move": "CHANGE_SUPPORT",
+      "confidence": 0.5,
+      "status": "sketched",
+      "reason": "Averages on a thinner well-factorable support are often cheaper.",
+      "sources": [
+        "sketch:d0:e285607cdcbe:CHANGE_SUPPORT:3"
+      ]
+    },
+    {
+      "id": "62c569bbeeeb",
+      "src": "7ad8cf5303e8",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:7ad8cf5303e8:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "6826ba2801c9",
+      "src": "909023f18703",
+      "dst": "a81d13fa5b1c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:909023f18703:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "68699950ec7b",
+      "src": "9bdc78a53c67",
+      "dst": "c64c55016da0",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:9bdc78a53c67:ENLARGE:1"
+      ]
+    },
+    {
+      "id": "6e866402facd",
+      "src": "edb3d24ee1c8",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:edb3d24ee1c8:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "6eb31e181aed",
+      "src": "fd3eacbef3eb",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:fd3eacbef3eb:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "745eba7bc940",
+      "src": "1c7dc7328e61",
+      "dst": "b3e0d2ebabbc",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:1c7dc7328e61:RELATIVE_AMBIENT:1",
+        "sketch:d1:1c7dc7328e61:RELATIVE_AMBIENT:1",
+        "sketch:d2:1c7dc7328e61:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "775f10b231fa",
+      "src": "16ac7f60ebaa",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:16ac7f60ebaa:RELATIVE_AMBIENT:3"
+      ]
+    },
+    {
+      "id": "7c2d3d079798",
+      "src": "16ac7f60ebaa",
+      "dst": "b2c4c6c50e4e",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:16ac7f60ebaa:ENLARGE:1"
+      ]
+    },
+    {
+      "id": "80d7d647bf0e",
+      "src": "d4a0120898d8",
+      "dst": "b2c4c6c50e4e",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d2:d4a0120898d8:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "8abb5e01cc72",
+      "src": "1768df022bdd",
+      "dst": "c64c55016da0",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:1768df022bdd:ENLARGE:1"
+      ]
+    },
+    {
+      "id": "8b70ed4c57ad",
+      "src": "65149b17b78c",
+      "dst": "4b507cae4c24",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 65149b17b78c with distribution e285607cdcbe; meet=True.",
+      "sources": [
+        "sketch:d1:65149b17b78c:COMBINE:0"
+      ]
+    },
+    {
+      "id": "8bf0d6cbc973",
+      "src": "df527bb82abf",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:df527bb82abf:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "8d08185c90ca",
+      "src": "e052ab7ba49d",
+      "dst": "b9c54f5c3e41",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:e052ab7ba49d:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "8d391b9e08ef",
+      "src": "52fc586c27eb",
+      "dst": "cf5d92ce44ce",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:52fc586c27eb:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "8d95a4aa21b7",
+      "src": "c028f18701c7",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:c028f18701c7:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "8e8bd6c505a7",
+      "src": "9bdc78a53c67",
+      "dst": "f012ab9cd6ea",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 9bdc78a53c67 with distribution e285607cdcbe; meet=True.",
+      "sources": [
+        "sketch:d1:9bdc78a53c67:COMBINE:0"
+      ]
+    },
+    {
+      "id": "900cb352878a",
+      "src": "6f8dfcb852a0",
+      "dst": "b72b1c496561",
+      "move": "SPECIALIZE",
+      "confidence": 0.22,
+      "status": "sketched",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:6f8dfcb852a0:SPECIALIZE:0",
+        "sketch:d2:6f8dfcb852a0:SPECIALIZE:0"
+      ]
+    },
+    {
+      "id": "9349f93def4d",
+      "src": "2b4536c1fa14",
+      "dst": "5b978a2cbc0d",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d0:2b4536c1fa14:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "9493c026028a",
+      "src": "71811f8d4ad9",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:71811f8d4ad9:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "94a8b6657361",
+      "src": "1768df022bdd",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:1768df022bdd:TRANSLATE:3"
+      ]
+    },
+    {
+      "id": "96d9386703c1",
+      "src": "6d273356fa7b",
+      "dst": "a81d13fa5b1c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:6d273356fa7b:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "984ca134367b",
+      "src": "3d6935022935",
+      "dst": "c028f18701c7",
+      "move": "TYPE_I_ONLY",
+      "confidence": 0.0384,
+      "status": "checked_barrier",
+      "reason": "Detect primes from Type I / indicator information only.",
+      "sources": [
+        "sketch:d0:3d6935022935:TYPE_I_ONLY:3"
+      ]
+    },
+    {
+      "id": "98d59c55839d",
+      "src": "7ad8cf5303e8",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:7ad8cf5303e8:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "9a5ecdd93ba5",
+      "src": "b9c54f5c3e41",
+      "dst": "6f8dfcb852a0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:b9c54f5c3e41:TRANSLATE:0",
+        "sketch:d2:b9c54f5c3e41:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "a0bdc199ca7a",
+      "src": "6e8b5f6427f1",
+      "dst": "638002728cd6",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 9bdc78a53c67 with distribution 6e8b5f6427f1; meet=True.",
+      "sources": [
+        "sketch:d1:6e8b5f6427f1:COMBINE:1"
+      ]
+    },
+    {
+      "id": "a0f6003c4f28",
+      "src": "c028f18701c7",
+      "dst": "9fe5598f0ac1",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:c028f18701c7:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "a131a1f9da4c",
+      "src": "1963a7107ee6",
+      "dst": "71811f8d4ad9",
+      "move": "TYPE_I_ONLY",
+      "confidence": 0.0384,
+      "status": "checked_barrier",
+      "reason": "Detect primes from Type I / indicator information only.",
+      "sources": [
+        "sketch:d0:1963a7107ee6:TYPE_I_ONLY:3"
+      ]
+    },
+    {
+      "id": "a4920e46e291",
+      "src": "897b247bbc54",
+      "dst": "9bdc78a53c67",
+      "move": "ENRICH_DETECTOR",
+      "confidence": 0.55,
+      "status": "sketched",
+      "reason": "Richer detector class may lower the distribution demand.",
+      "sources": [
+        "sketch:d0:897b247bbc54:ENRICH_DETECTOR:0"
+      ]
+    },
+    {
+      "id": "a5369f5c48f3",
+      "src": "3488b81a7212",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:3488b81a7212:TRANSLATE:1",
+        "sketch:d2:3488b81a7212:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "a741bf9c521a",
+      "src": "6e8b5f6427f1",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:6e8b5f6427f1:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "a89bc97ed514",
+      "src": "d4a0120898d8",
+      "dst": "a81d13fa5b1c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:d4a0120898d8:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "ad7e5cfe2d15",
+      "src": "6d273356fa7b",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:6d273356fa7b:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "b18d9825525e",
+      "src": "edb3d24ee1c8",
+      "dst": "c64c55016da0",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d2:edb3d24ee1c8:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "b60d7a2bf6e7",
+      "src": "71811f8d4ad9",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:71811f8d4ad9:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "b781acea49bc",
+      "src": "e8eaa4a8c312",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:e8eaa4a8c312:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "b8fb8c40ffaa",
+      "src": "b3e0d2ebabbc",
+      "dst": "5c1303c6d321",
+      "move": "SPECIALIZE",
+      "confidence": 0.22,
+      "status": "sketched",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:b3e0d2ebabbc:SPECIALIZE:0",
+        "sketch:d2:b3e0d2ebabbc:SPECIALIZE:0"
+      ]
+    },
+    {
+      "id": "bac359b576ce",
+      "src": "9559525859c4",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:9559525859c4:ENLARGE:0",
+        "sketch:d2:9559525859c4:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "bc04a332fc46",
+      "src": "df527bb82abf",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:df527bb82abf:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "c0980afc0e57",
+      "src": "4b507cae4c24",
+      "dst": "edb3d24ee1c8",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:4b507cae4c24:SPECIALIZE:2",
+        "sketch:d2:4b507cae4c24:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "c3820b9969ca",
+      "src": "aa4520b9cba7",
+      "dst": "ac8cc1021909",
+      "move": "SPECIALIZE",
+      "confidence": 0.154,
+      "status": "checked_translation",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:aa4520b9cba7:SPECIALIZE:0"
+      ]
+    },
+    {
+      "id": "c5d180af3d72",
+      "src": "909023f18703",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:909023f18703:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "c85e1afb6fd9",
+      "src": "897b247bbc54",
+      "dst": "a81d13fa5b1c",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:897b247bbc54:RELATIVE_AMBIENT:3"
+      ]
+    },
+    {
+      "id": "cb79d559c823",
+      "src": "1963a7107ee6",
+      "dst": "6f8dfcb852a0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:1963a7107ee6:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "cbfaa8a7a340",
+      "src": "897b247bbc54",
+      "dst": "b2c4c6c50e4e",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:897b247bbc54:ENLARGE:1"
+      ]
+    },
+    {
+      "id": "ccaafe4f80d1",
+      "src": "1768df022bdd",
+      "dst": "711f54d736ad",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 1768df022bdd with distribution e285607cdcbe; meet=True.",
+      "sources": [
+        "sketch:d1:1768df022bdd:COMBINE:0"
+      ]
+    },
+    {
+      "id": "ce5bee84c6db",
+      "src": "2b4536c1fa14",
+      "dst": "aa4520b9cba7",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:2b4536c1fa14:TRANSLATE:0"
+      ]
+    },
+    {
+      "id": "ce9a02c58d40",
+      "src": "c028f18701c7",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:c028f18701c7:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "d1604d075bc0",
+      "src": "b2c4c6c50e4e",
+      "dst": "b3e0d2ebabbc",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d1:b2c4c6c50e4e:RELATIVE_AMBIENT:1",
+        "sketch:d2:b2c4c6c50e4e:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "d2379764dd84",
+      "src": "c64c55016da0",
+      "dst": "137027db47d0",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d2:c64c55016da0:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "d4f41ad710c6",
+      "src": "d4a0120898d8",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d2:d4a0120898d8:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "d5f594e3a217",
+      "src": "e052ab7ba49d",
+      "dst": "1cdc8feaa381",
+      "move": "SPECIALIZE",
+      "confidence": 0.0264,
+      "status": "checked_barrier",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d2:e052ab7ba49d:SPECIALIZE:2"
+      ]
+    },
+    {
+      "id": "d63da8378389",
+      "src": "a81d13fa5b1c",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d1:a81d13fa5b1c:ENLARGE:0",
+        "sketch:d2:a81d13fa5b1c:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "db360492aee4",
+      "src": "711f54d736ad",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:711f54d736ad:TRANSLATE:1",
+        "sketch:d2:711f54d736ad:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "ddf6427a42ef",
+      "src": "6d273356fa7b",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:6d273356fa7b:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "dfcdae50635c",
+      "src": "fd3eacbef3eb",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:fd3eacbef3eb:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "e0796dc2e88a",
+      "src": "16ac7f60ebaa",
+      "dst": "b72b1c496561",
+      "move": "TRANSLATE",
+      "confidence": 0.38,
+      "status": "sketched",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d0:16ac7f60ebaa:TRANSLATE:2"
+      ]
+    },
+    {
+      "id": "e55889390f42",
+      "src": "e285607cdcbe",
+      "dst": "4b507cae4c24",
+      "move": "COMBINE",
+      "confidence": 0.7,
+      "status": "sketched",
+      "reason": "Combine detector 65149b17b78c with distribution e285607cdcbe; meet=True.",
+      "sources": [
+        "sketch:d0:e285607cdcbe:COMBINE:2"
+      ]
+    },
+    {
+      "id": "e89030b5ee19",
+      "src": "9fe5598f0ac1",
+      "dst": "b3e0d2ebabbc",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d2:9fe5598f0ac1:RELATIVE_AMBIENT:1"
+      ]
+    },
+    {
+      "id": "ec93c71b3693",
+      "src": "1768df022bdd",
+      "dst": "df527bb82abf",
+      "move": "COMBINE",
+      "confidence": 0.42,
+      "status": "sketched",
+      "reason": "Combine detector 1768df022bdd with distribution 6e8b5f6427f1; meet=True.",
+      "sources": [
+        "sketch:d1:1768df022bdd:COMBINE:2"
+      ]
+    },
+    {
+      "id": "ee4769fb3d99",
+      "src": "df527bb82abf",
+      "dst": "c64c55016da0",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d2:df527bb82abf:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "ef27b096213c",
+      "src": "3d6935022935",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:3d6935022935:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "f2884ab182bf",
+      "src": "a81d13fa5b1c",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:a81d13fa5b1c:TRANSLATE:1",
+        "sketch:d2:a81d13fa5b1c:TRANSLATE:1"
+      ]
+    },
+    {
+      "id": "f3153d5e69ba",
+      "src": "b9c54f5c3e41",
+      "dst": "3488b81a7212",
+      "move": "SPECIALIZE",
+      "confidence": 0.22,
+      "status": "sketched",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:b9c54f5c3e41:SPECIALIZE:1",
+        "sketch:d2:b9c54f5c3e41:SPECIALIZE:1"
+      ]
+    },
+    {
+      "id": "f4b1b254f34d",
+      "src": "3d6935022935",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:3d6935022935:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "f60cbbb9a677",
+      "src": "9bdc78a53c67",
+      "dst": "9559525859c4",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:9bdc78a53c67:TRANSLATE:3"
+      ]
+    },
+    {
+      "id": "fa2fbf7b1b34",
+      "src": "2dc5daafb989",
+      "dst": "462d7ba414c8",
+      "move": "SPECIALIZE",
+      "confidence": 0.22,
+      "status": "sketched",
+      "reason": "Set the extra variable to a constant. This usually deletes the averaging.",
+      "sources": [
+        "sketch:d1:2dc5daafb989:SPECIALIZE:0"
+      ]
+    },
+    {
+      "id": "fa65ebf09aeb",
+      "src": "fd3eacbef3eb",
+      "dst": "3488b81a7212",
+      "move": "RELATIVE_AMBIENT",
+      "confidence": 0.34,
+      "status": "sketched",
+      "reason": "Treat the thin set as dense in a pseudorandom ambient.",
+      "sources": [
+        "sketch:d0:fd3eacbef3eb:RELATIVE_AMBIENT:2"
+      ]
+    },
+    {
+      "id": "fbe7ca1d941c",
+      "src": "52fc586c27eb",
+      "dst": "1c7dc7328e61",
+      "move": "ENLARGE",
+      "confidence": 0.48,
+      "status": "sketched",
+      "reason": "Enlarge to a family with a free variable.",
+      "sources": [
+        "sketch:d0:52fc586c27eb:ENLARGE:0"
+      ]
+    },
+    {
+      "id": "ffd90aaa103b",
+      "src": "65149b17b78c",
+      "dst": "6f8dfcb852a0",
+      "move": "TRANSLATE",
+      "confidence": 0.26599999999999996,
+      "status": "checked_translation",
+      "reason": "Rewrite in a neighbouring ring or language. Thin set may stay thin.",
+      "sources": [
+        "sketch:d1:65149b17b78c:TRANSLATE:2"
+      ]
+    }
+  ],
+  "merge_log": [
+    "merged 1c7dc7328e61 sources+=['reframe:bilinear_forms_type_II:EMBED'] conf 0.84->0.84",
+    "merged e285607cdcbe sources+=['reframe:bombieri_vinogradov:RESTRICTED_SUPPORT'] conf 0.75->0.75",
+    "merged 897b247bbc54 sources+=['reframe:bombieri_vinogradov:WEIGHTS'] conf 0.71->0.71",
+    "merged 897b247bbc54 sources+=['reframe:hecke_grossencharacters:WEIGHTS'] conf 0.71->0.71",
+    "merged e285607cdcbe sources+=['reframe:sieve_weights_selberg:RESTRICTED_SUPPORT'] conf 0.75->0.75",
+    "merged 897b247bbc54 sources+=['reframe:sieve_weights_selberg:WEIGHTS'] conf 0.71->0.71",
+    "merged 1963a7107ee6 sources+=['reframe:switching_principle:BILINEAR'] conf 0.71->0.71",
+    "merged 897b247bbc54 sources+=['reframe:switching_principle:WEIGHTS'] conf 0.71->0.71",
+    "merged 1963a7107ee6 sources+=['reframe:well_factorable_moduli:BILINEAR'] conf 0.71->0.71",
+    "merged e285607cdcbe sources+=['reframe:well_factorable_moduli:RESTRICTED_SUPPORT'] conf 0.75->0.75",
+    "merged 897b247bbc54 sources+=['reframe:well_factorable_moduli:WEIGHTS'] conf 0.71->0.71",
+    "merged 1963a7107ee6 sources+=['reframe:additive_energy:BILINEAR'] conf 0.71->0.71",
+    "merged 1c7dc7328e61 sources+=['reframe:additive_energy:EMBED'] conf 0.84->0.84",
+    "merged 1c7dc7328e61 sources+=['reframe:elliptic_curves:EMBED'] conf 0.84->0.84",
+    "merged 1963a7107ee6 sources+=['reframe:expander_graphs:BILINEAR'] conf 0.71->0.71",
+    "merged 1c7dc7328e61 sources+=['reframe:function_field_analogs:EMBED'] conf 0.84->0.84",
+    "merged 1963a7107ee6 sources+=['reframe:gowers_norms:BILINEAR'] conf 0.71->0.71",
+    "merged b72b1c496561 sources+=['sketch:d0:16ac7f60ebaa:TRANSLATE:2'] conf 0.8->0.8",
+    "merged 5b978a2cbc0d sources+=['sketch:d0:2b4536c1fa14:SPECIALIZE:2'] conf 0.22->0.22",
+    "merged 1c7dc7328e61 sources+=['sketch:d0:3d6935022935:ENLARGE:0'] conf 0.84->0.84",
+    "merged b72b1c496561 sources+=['sketch:d0:3d6935022935:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d0:3d6935022935:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d0:52fc586c27eb:ENLARGE:0'] conf 0.84->0.84",
+    "merged 1c7dc7328e61 sources+=['sketch:d0:6d273356fa7b:ENLARGE:0'] conf 0.84->0.84",
+    "merged b2c4c6c50e4e sources+=['sketch:d0:897b247bbc54:ENLARGE:1'] conf 0.48->0.48",
+    "merged 9559525859c4 sources+=['sketch:d0:897b247bbc54:TRANSLATE:2'] conf 0.38->0.38",
+    "merged a81d13fa5b1c sources+=['sketch:d0:897b247bbc54:RELATIVE_AMBIENT:3'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d0:b72b1c496561:ENLARGE:0'] conf 0.84->0.84",
+    "merged 1c7dc7328e61 sources+=['sketch:d0:e8eaa4a8c312:ENLARGE:0'] conf 0.84->0.84",
+    "merged 9559525859c4 sources+=['sketch:d0:e8eaa4a8c312:TRANSLATE:1'] conf 0.38->0.38",
+    "merged a81d13fa5b1c sources+=['sketch:d0:e8eaa4a8c312:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d0:fd3eacbef3eb:ENLARGE:0'] conf 0.84->0.84",
+    "merged b72b1c496561 sources+=['sketch:d0:fd3eacbef3eb:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d0:fd3eacbef3eb:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 711f54d736ad sources+=['sketch:d1:1768df022bdd:COMBINE:0'] conf 0.7->0.7",
+    "merged b72b1c496561 sources+=['sketch:d1:1768df022bdd:TRANSLATE:3'] conf 0.8->0.8",
+    "merged f2bff31f2baa sources+=['sketch:d1:1c7dc7328e61:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b3e0d2ebabbc sources+=['sketch:d1:1c7dc7328e61:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 5b978a2cbc0d sources+=['sketch:d1:1c7dc7328e61:SPECIALIZE:2'] conf 0.22->0.22",
+    "merged 1c7dc7328e61 sources+=['sketch:d1:3488b81a7212:ENLARGE:0'] conf 0.84->0.84",
+    "merged b72b1c496561 sources+=['sketch:d1:3488b81a7212:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 6f8dfcb852a0 sources+=['sketch:d1:4b507cae4c24:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b9c54f5c3e41 sources+=['sketch:d1:4b507cae4c24:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d1:5b978a2cbc0d:ENLARGE:0'] conf 0.84->0.84",
+    "merged b72b1c496561 sources+=['sketch:d1:5b978a2cbc0d:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d1:5b978a2cbc0d:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 4b507cae4c24 sources+=['sketch:d1:65149b17b78c:COMBINE:0'] conf 0.7->0.7",
+    "merged 6f8dfcb852a0 sources+=['sketch:d1:65149b17b78c:TRANSLATE:2'] conf 0.38->0.38",
+    "merged b9c54f5c3e41 sources+=['sketch:d1:65149b17b78c:RELATIVE_AMBIENT:3'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d1:6e8b5f6427f1:ENLARGE:0'] conf 0.84->0.84",
+    "merged df527bb82abf sources+=['sketch:d1:6e8b5f6427f1:COMBINE:3'] conf 0.42->0.42",
+    "merged b72b1c496561 sources+=['sketch:d1:6f8dfcb852a0:SPECIALIZE:0'] conf 0.8->0.8",
+    "merged c64c55016da0 sources+=['sketch:d1:711f54d736ad:ENLARGE:0'] conf 0.48->0.48",
+    "merged b72b1c496561 sources+=['sketch:d1:711f54d736ad:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d1:711f54d736ad:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged b2c4c6c50e4e sources+=['sketch:d1:71811f8d4ad9:ENLARGE:0'] conf 0.48->0.48",
+    "merged b72b1c496561 sources+=['sketch:d1:71811f8d4ad9:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d1:71811f8d4ad9:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d1:909023f18703:ENLARGE:0'] conf 0.84->0.84",
+    "merged 9559525859c4 sources+=['sketch:d1:909023f18703:TRANSLATE:1'] conf 0.38->0.38",
+    "merged a81d13fa5b1c sources+=['sketch:d1:909023f18703:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d1:9559525859c4:ENLARGE:0'] conf 0.84->0.84",
+    "merged f012ab9cd6ea sources+=['sketch:d1:9bdc78a53c67:COMBINE:0'] conf 0.7->0.7",
+    "merged c64c55016da0 sources+=['sketch:d1:9bdc78a53c67:ENLARGE:1'] conf 0.48->0.48",
+    "merged 638002728cd6 sources+=['sketch:d1:9bdc78a53c67:COMBINE:2'] conf 0.42->0.42",
+    "merged 9559525859c4 sources+=['sketch:d1:9bdc78a53c67:TRANSLATE:3'] conf 0.38->0.38",
+    "merged 1c7dc7328e61 sources+=['sketch:d1:a81d13fa5b1c:ENLARGE:0'] conf 0.84->0.84",
+    "merged 9559525859c4 sources+=['sketch:d1:a81d13fa5b1c:TRANSLATE:1'] conf 0.38->0.38",
+    "merged f2bff31f2baa sources+=['sketch:d1:b2c4c6c50e4e:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b3e0d2ebabbc sources+=['sketch:d1:b2c4c6c50e4e:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d1:b72b1c496561:ENLARGE:0'] conf 0.84->0.84",
+    "merged 6f8dfcb852a0 sources+=['sketch:d1:b9c54f5c3e41:TRANSLATE:0'] conf 0.38->0.38",
+    "merged 3488b81a7212 sources+=['sketch:d1:b9c54f5c3e41:SPECIALIZE:1'] conf 0.34->0.34",
+    "merged b72b1c496561 sources+=['sketch:d1:c028f18701c7:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d1:c028f18701c7:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged c64c55016da0 sources+=['sketch:d1:f012ab9cd6ea:ENLARGE:0'] conf 0.48->0.48",
+    "merged 9559525859c4 sources+=['sketch:d1:f012ab9cd6ea:TRANSLATE:1'] conf 0.38->0.38",
+    "merged a81d13fa5b1c sources+=['sketch:d1:f012ab9cd6ea:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged f2bff31f2baa sources+=['sketch:d2:1c7dc7328e61:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b3e0d2ebabbc sources+=['sketch:d2:1c7dc7328e61:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 5b978a2cbc0d sources+=['sketch:d2:1c7dc7328e61:SPECIALIZE:2'] conf 0.22->0.22",
+    "merged 1c7dc7328e61 sources+=['sketch:d2:3488b81a7212:ENLARGE:0'] conf 0.84->0.84",
+    "merged b72b1c496561 sources+=['sketch:d2:3488b81a7212:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 6f8dfcb852a0 sources+=['sketch:d2:4b507cae4c24:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b9c54f5c3e41 sources+=['sketch:d2:4b507cae4c24:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged edb3d24ee1c8 sources+=['sketch:d2:4b507cae4c24:SPECIALIZE:2'] conf 0.22->0.22",
+    "merged 1c7dc7328e61 sources+=['sketch:d2:5b978a2cbc0d:ENLARGE:0'] conf 0.84->0.84",
+    "merged b72b1c496561 sources+=['sketch:d2:5b978a2cbc0d:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d2:5b978a2cbc0d:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged c64c55016da0 sources+=['sketch:d2:638002728cd6:ENLARGE:0'] conf 0.48->0.48",
+    "merged 9559525859c4 sources+=['sketch:d2:638002728cd6:TRANSLATE:1'] conf 0.38->0.38",
+    "merged a81d13fa5b1c sources+=['sketch:d2:638002728cd6:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged b72b1c496561 sources+=['sketch:d2:6f8dfcb852a0:SPECIALIZE:0'] conf 0.8->0.8",
+    "merged c64c55016da0 sources+=['sketch:d2:711f54d736ad:ENLARGE:0'] conf 0.48->0.48",
+    "merged b72b1c496561 sources+=['sketch:d2:711f54d736ad:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d2:711f54d736ad:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged b2c4c6c50e4e sources+=['sketch:d2:7ad8cf5303e8:ENLARGE:0'] conf 0.48->0.48",
+    "merged b72b1c496561 sources+=['sketch:d2:7ad8cf5303e8:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d2:7ad8cf5303e8:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d2:9559525859c4:ENLARGE:0'] conf 0.84->0.84",
+    "merged f2bff31f2baa sources+=['sketch:d2:9fe5598f0ac1:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b3e0d2ebabbc sources+=['sketch:d2:9fe5598f0ac1:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 1c7dc7328e61 sources+=['sketch:d2:a81d13fa5b1c:ENLARGE:0'] conf 0.84->0.84",
+    "merged 9559525859c4 sources+=['sketch:d2:a81d13fa5b1c:TRANSLATE:1'] conf 0.38->0.38",
+    "merged f2bff31f2baa sources+=['sketch:d2:b2c4c6c50e4e:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b3e0d2ebabbc sources+=['sketch:d2:b2c4c6c50e4e:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged 7ad8cf5303e8 sources+=['sketch:d2:b2c4c6c50e4e:SPECIALIZE:2'] conf 0.22->0.22",
+    "merged 5c1303c6d321 sources+=['sketch:d2:b3e0d2ebabbc:SPECIALIZE:0'] conf 0.22->0.22",
+    "merged 1c7dc7328e61 sources+=['sketch:d2:b72b1c496561:ENLARGE:0'] conf 0.84->0.84",
+    "merged 6f8dfcb852a0 sources+=['sketch:d2:b9c54f5c3e41:TRANSLATE:0'] conf 0.38->0.38",
+    "merged 3488b81a7212 sources+=['sketch:d2:b9c54f5c3e41:SPECIALIZE:1'] conf 0.34->0.34",
+    "merged f2bff31f2baa sources+=['sketch:d2:c64c55016da0:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b3e0d2ebabbc sources+=['sketch:d2:c64c55016da0:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged b2c4c6c50e4e sources+=['sketch:d2:d4a0120898d8:ENLARGE:0'] conf 0.48->0.48",
+    "merged 9559525859c4 sources+=['sketch:d2:d4a0120898d8:TRANSLATE:1'] conf 0.38->0.38",
+    "merged a81d13fa5b1c sources+=['sketch:d2:d4a0120898d8:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged c64c55016da0 sources+=['sketch:d2:df527bb82abf:ENLARGE:0'] conf 0.48->0.48",
+    "merged b72b1c496561 sources+=['sketch:d2:df527bb82abf:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d2:df527bb82abf:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 6f8dfcb852a0 sources+=['sketch:d2:e052ab7ba49d:TRANSLATE:0'] conf 0.38->0.38",
+    "merged b9c54f5c3e41 sources+=['sketch:d2:e052ab7ba49d:RELATIVE_AMBIENT:1'] conf 0.34->0.34",
+    "merged c64c55016da0 sources+=['sketch:d2:edb3d24ee1c8:ENLARGE:0'] conf 0.48->0.48",
+    "merged b72b1c496561 sources+=['sketch:d2:edb3d24ee1c8:TRANSLATE:1'] conf 0.8->0.8",
+    "merged 3488b81a7212 sources+=['sketch:d2:edb3d24ee1c8:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged c64c55016da0 sources+=['sketch:d2:f012ab9cd6ea:ENLARGE:0'] conf 0.48->0.48",
+    "merged 9559525859c4 sources+=['sketch:d2:f012ab9cd6ea:TRANSLATE:1'] conf 0.38->0.38",
+    "merged a81d13fa5b1c sources+=['sketch:d2:f012ab9cd6ea:RELATIVE_AMBIENT:2'] conf 0.34->0.34",
+    "merged 70c57d13b5a7 sources+=['sketch:d2:f2bff31f2baa:SPECIALIZE:0'] conf 0.22->0.22"
+  ]
+}
