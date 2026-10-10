@@ -40,7 +40,7 @@ def _o(**kwargs) -> DistantObject:
 
 
 # Area labels used for the "distant borrow" bonus. Nearby areas are
-# listed in generator.NEARBY so Landau does not get a bonus for
+# listed in scorer.NEARBY so Landau does not get a bonus for
 # borrowing another sieve object.
 CATALOG: list[DistantObject] = [
     _o(

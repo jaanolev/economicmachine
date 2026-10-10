@@ -110,9 +110,32 @@ tree, and `results/*.json`. It does **not** get this report (so it cannot
 copy the self-grade). Its job is to attack known-answer tests for leakage
 and cherry-picking, and to refuse any Landau progress claim.
 
-Placeholder before that agent returns:
+Fresh agent, isolated copy at `/tmp/reframing_cold/` (no `report.md`).
+**VERDICT: PASS.**
 
-> Cold grader not yet run in this revision.
+It recomputed the suite (same FAIL: FI 12–12, Green–Tao G3) and the
+Landau shadows (49; first twenty n; Ω 16/38/21/5 and 38/42; C_B
+1.369856; lines 34/34/25/31). Infinitude claimed: no.
 
-After it returns, the next section is filled in. Do not treat the
-placeholder as a PASS.
+Fatal flaws: none. Nits it listed, with who owns them:
+
+1. Catalog is 47 objects, not 46 as `engine.md` said. **Cold grader.**
+   Fixed in this revision; locked in `test_catalog_size_and_ids_unique`.
+2. `catalog.py` comment pointed at `generator.NEARBY`; the map is in
+   `scorer.py`. **Cold grader.** Fixed.
+3. FLT / bounded-gaps known-bads are mostly TRANSLATE/HEURISTIC, so
+   those G1s are uninformative. **Author already, grader agreed.** Not
+   retuned.
+4. Winner-string lint is a scarecrow (`"hamilton program bonus"`).
+   **Cold grader.** Left as-is; the files are clean anyway.
+5. Native-object penalty was post-hoc. **Disclosed; grader accepted
+   because the suite still fails.**
+6. Mechanical `new-looking` can mislead a skimmer. **Warned in the
+   Landau note.**
+
+The grader's one-paragraph: the suite is a soft tag-overlap sorter with
+hindsight in the tag names, but it is not cooked, and Landau does not
+claim progress.
+
+That PASS is an honesty PASS, not a "the scorer works" PASS. The scorer
+still failed G1/G3. Do not upgrade the suite verdict.

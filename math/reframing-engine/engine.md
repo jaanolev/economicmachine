@@ -82,7 +82,7 @@ Tests do not call a model. A small model that cannot invent post-cutoff
 theorems can still fill the JSON schema from one card, one object, one
 template.
 
-Frozen catalog: 46 objects, dated, tagged. Frozen templates: 12 moves
+Frozen catalog: 47 objects, dated, tagged. Frozen templates: 12 moves
 (`DETECT`, `DEFORM`, `RELATIVE_DENSITY`, `WEIGHTS`, `BILINEAR`,
 `MODULARITY`, `EMBED`, `DUAL`, `LOCAL_GLOBAL`, `TRANSLATE`,
 `HEURISTIC_MODEL`, `RESTRICTED_SUPPORT`).

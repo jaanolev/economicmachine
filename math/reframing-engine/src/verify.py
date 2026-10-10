@@ -44,6 +44,7 @@ SRC = Path(__file__).resolve().parent
 
 def test_catalog_size_and_ids_unique():
     assert len(CATALOG) >= 40
+    assert len(CATALOG) == 47  # cold grader caught engine.md saying 46
     ids = [o.id for o in CATALOG]
     assert len(ids) == len(set(ids))
 
