@@ -25,11 +25,11 @@ We do **not** prove the claim. We prove the theorems in §1–§4. Section 5 des
 
 **Step A1 (setup).** Let \(p\) be an odd prime and \(n\in\mathbb{Z}\) with \(p\mid n^2+1\). Then \(n^2\equiv -1\pmod{p}\), so \(-1\) is a square in \(\mathbb{F}_p\).
 
-**Step A2 (Euler's criterion for \(-1\)).** For odd prime \(p\) and \(a\not\equiv 0\pmod{p}\), Fermat gives \(a^{p-1}\equiv 1\pmod{p}\), hence \(a^{(p-1)/2}\equiv\pm 1\pmod{p}\). If \(a=b^2\), then \(a^{(p-1)/2}=b^{p-1}\equiv 1\pmod{p}\). The polynomial \(X^{(p-1)/2}-1\) has at most \((p-1)/2\) roots in \(\mathbb{F}_p\), and there are exactly \((p-1)/2\) nonzero squares, so the nonzero squares are precisely the roots. Therefore
+**Step A2 (Euler's criterion for \(-1\)).** For odd prime \(p\) and \(a\not\equiv 0\pmod{p}\), Fermat gives \(a^{p-1}\equiv 1\pmod{p}\), hence \(a^{(p-1)/2}\equiv\pm 1\pmod{p}\). If \(a=b^2\), then \(a^{(p-1)/2}=b^{p-1}\equiv 1\pmod{p}\). The map \(x\mapsto x^2\) on \(\mathbb{F}_p^\times\) is exactly two-to-one (\(x\) and \(-x\) are distinct because \(p\) is odd), so there are exactly \((p-1)/2\) nonzero squares. The polynomial \(X^{(p-1)/2}-1\) has at most \((p-1)/2\) roots in \(\mathbb{F}_p\), hence the nonzero squares are precisely those roots. Therefore
 \[
 \Bigl(\frac{-1}{p}\Bigr)\;=\;(-1)^{(p-1)/2}.
 \]
-(The two sides are both \(\pm 1\), and they agree in \(\mathbb{F}_p\).)
+(The two sides are both \(\pm 1\), and they agree in \(\mathbb{F}_p\); since \(p>2\) they are distinct residues, so the integer signs agree.)
 
 **Step A3.** From A1, \(\bigl(\frac{-1}{p}\bigr)=1\), so \((p-1)/2\) is even, so \(p\equiv 1\pmod{4}\).
 
@@ -85,9 +85,9 @@ holds for every \(n\in\mathbb{Z}\) (expand the left side: \(4n^2+4-(4n^2-1)=5\))
 \Bigl|\frac{\alpha}{\beta}-\gamma\Bigr|^2\le\Bigl(\tfrac12\Bigr)^2+\Bigl(\tfrac12\Bigr)^2=\tfrac12<1.
 \]
 
-**Step F2.** Hence \(N(\alpha-\gamma\beta)=N(\beta)\,|\alpha/\beta-\gamma|^2<N(\beta)\), where \(N(x+yi)=x^2+y^2\). So \(N\) is a Euclidean function. In particular \(\mathbb{Z}[i]\) is a PID and a UFD, and irreducible elements are prime.
+**Step F2.** Hence \(N(\alpha-\gamma\beta)=N(\beta)\,|\alpha/\beta-\gamma|^2<N(\beta)\), where \(N(x+yi)=x^2+y^2\). So \(N\) is a Euclidean function. A Euclidean domain is a PID (the generator of an ideal is a nonzero element of least norm), and a PID is a UFD, so irreducible elements are prime.
 
-**Step F3 (units).** \(N(u)=1\) iff \(u\in\{1,-1,i,-i\}\).
+**Step F3 (units).** \(N(u)=1\) means \(x^2+y^2=1\) with \(x,y\in\mathbb{Z}\), hence \((x,y)\in\{(\pm 1,0),(0,\pm 1)\}\), i.e. \(u\in\{1,-1,i,-i\}\).
 
 **Step F4 (norm is multiplicative).** \(N(\alpha\beta)=N(\alpha)N(\beta)\) holds by the identity
 \[
@@ -111,7 +111,7 @@ holds for every \(n\in\mathbb{Z}\) (expand the left side: \(4n^2+4-(4n^2-1)=5\))
 
 **Step H2 (if \(n+i\) is reducible).** If \(n+i=\alpha\beta\) with \(N(\alpha),N(\beta)>1\), then \(n^2+1=N(\alpha)N(\beta)\) is composite in \(\mathbb{Z}\).
 
-**Step H3 (if \(n+i\) is irreducible).** Then \(n+i\) is prime in \(\mathbb{Z}[i]\). The norm of a Gaussian prime is either a rational prime or the square of an inert rational prime. The latter would mean \(n+i=u\,q\) for a unit \(u\) and a prime \(q\equiv 3\pmod{4}\). Checking the four units:
+**Step H3 (if \(n+i\) is irreducible).** Then \(n+i\) is prime in \(\mathbb{Z}[i]\) (F2). Let \(\pi=n+i\). Then \(\pi\) divides \(N(\pi)\in\mathbb{Z}\). Taking a rational prime \(q\mid N(\pi)\), we have \(\pi\mid q\) in \(\mathbb{Z}[i]\) after comparing to the factorisation of \(q\) from Theorem G, so \(N(\pi)\) is either \(q\) or \(q^2\). The case \(N(\pi)=q^2\) is the inert case \(q\equiv 3\pmod{4}\), which would mean \(n+i=u\,q\) for a unit \(u\). Checking the four units:
 
 - \(u=\pm 1\): imaginary part \(0\), not \(1\);
 - \(u=\pm i\): real part \(0\), so \(n=0\), and the imaginary part is \(\pm q=\pm 1\), so \(q=1\), not prime.
@@ -217,7 +217,7 @@ Dirichlet says that a *linear* polynomial \(an+b\) with \(\gcd(a,b)=1\) takes in
 
 A combinatorial sieve on the set \(A=\{n^2+1:n\le X\}\) estimates the count of elements free of prime factors \(<z\). The local densities are the \(\nu(p)\) of Theorem E, and the singular product is the Bateman–Horn constant of §7. With \(z=X^\theta\) for \(\theta\) small enough that remainders can be estimated, one detects *almost-primes* (\(P_r\) for some \(r\ge 2\)), not primes.
 
-The parity phenomenon: sieve weights built from the Möbius function on integers with small prime factors are essentially functions of \(\Omega\bmod 2\) only through an Euler product. They cannot separate \(\Omega=1\) from \(\Omega=2\) (or odd \(\Omega\) from even \(\Omega\)) without extra bilinear input. That is why a linear sieve can reach Iwaniec's \(P_2\) theorem for \(n^2+1\) and still not reach primes. We do not claim to have proved the parity barrier as a formal meta-theorem; we record it as the standard reason the sieve stops, and we illustrate it numerically in §7.3: among \(n\le 5\cdot 10^4\), the values \(n^2+1\) split as \(25042\) odd-\(\Omega\) versus \(24958\) even-\(\Omega\).
+The parity phenomenon: sieve weights built from the Möbius function on integers with small prime factors are essentially functions of \(\Omega\bmod 2\) only through an Euler product. They cannot separate \(\Omega=1\) from \(\Omega=2\) (or odd \(\Omega\) from even \(\Omega\)) without extra bilinear input. That is why a linear sieve can reach Iwaniec's \(P_2\) theorem for \(n^2+1\) and still not reach primes. We do not claim to have proved the parity barrier as a formal meta-theorem; we record it as the standard reason the sieve stops, and we illustrate it numerically in §7.3: among \(n\le 5\cdot 10^4\), the values \(n^2+1\) split as \(25041\) odd-\(\Omega\) versus \(24959\) even-\(\Omega\).
 
 ### 6.4 Circle method / von Mangoldt on a thin set
 
@@ -255,9 +255,9 @@ C_B=1.372719427895.
 Grouped form (uses \(\prod_p(1-\chi_4(p)/p)=4/\pi\), not proved here):
 
 \[
-C_{\mathrm{abs}}=1.372813462812
+C_{\mathrm{abs}}=1.37281346
 \]
-with a formal tail \(\lvert C-C_{\mathrm{abs}}\rvert\le 9\cdot 10^{-6}\) *if* that identity is granted (because \(\lvert\log a_p\rvert\le 2/(p-1)^2\) for \(p\ge 5\) and \(\sum_{n>B}1/(n-1)^2\le 1/(B-1)\)). We treat \(C_{\mathrm{abs}}\) as a computed approximation to \(C\), not as a theorem.
+(float64 Euler product; digits beyond \(10^{-8}\) are not claimed). With a formal tail \(\lvert C-C_{\mathrm{abs}}\rvert\le 9\cdot 10^{-6}\) *if* the \(4/\pi\) identity is granted (because \(\lvert\log a_p\rvert\le 2/(p-1)^2\) for \(p\ge 5\) and \(\sum_{n>B}1/(n-1)^2\le 1/(B-1)\)). We treat \(C_{\mathrm{abs}}\) as a computed approximation to \(C\), not as a theorem.
 
 ### 7.2 Census versus prediction
 
@@ -295,10 +295,10 @@ Complete factorisation of \(n^2+1\) for every \(n\le 5\cdot 10^4\) (trial divisi
 | 2 (\(P_2\) but not prime) | 12204 |
 | 3 | 16680 |
 | \(\ge 4\) | 17503 |
-| odd \(\Omega\) | 25042 |
-| even \(\Omega\) | 24958 |
+| odd \(\Omega\) | 25041 |
+| even \(\Omega\) | 24959 |
 
-There are many more \(P_2\) values than primes, as a sieve reaching \(P_2\) would suggest. The even/odd split is \(24958:25042\), within \(0.2\%\) of \(1:1\). That is the numerical face of §6.3.
+There are many more \(P_2\) values than primes, as a sieve reaching \(P_2\) would suggest. The even/odd split is \(24959:25041\), within \(0.2\%\) of \(1:1\). That is the numerical face of §6.3.
 
 ### 7.4 A tested angle: is \(\mathrm{Im}=1\) thinner than neighbouring lines?
 

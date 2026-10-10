@@ -27,7 +27,7 @@ Every identity used in those proofs is locked in `verify.py` at generic paramete
 - Bateman–Horn constant: \(C_B=1.372719427895\) (direct product, \(B=5\cdot 10^5\)); \(C_{\mathrm{abs}}=1.372813462812\) (grouped with \(4/\pi\)).
 - Census through \(N=10^6\): **54110** primes \(n^2+1\), versus BH prediction **53970.901**, ratio **1.0026**.
 - Table of counts at \(N=10,30,100,\dots,10^6\) in `proof.md` §7.2; all exact as integers, predictions from Simpson quadrature.
-- \(\Omega\)-statistics for \(n\le 5\cdot 10^4\): 3613 primes, 12204 proper \(P_2\), odd/even \(\Omega\) split \(25042:24958\).
+- \(\Omega\)-statistics for \(n\le 5\cdot 10^4\): 3613 primes, 12204 proper \(P_2\), odd/even \(\Omega\) split \(25041:24959\).
 - Gaussian-prime counts on \(\mathrm{Im}=k\) for \(k=1..8\), \(\mathrm{Re}\le 2\cdot 10^5\): the line \(k=1\) is not thinner than neighbouring even \(k\).
 - Euclid same-shape recurrence: one lucky prime \(17\), then \(68^2+1=4625=5^3\cdot 37\).
 - No perfect power \(n^2+1\) for \(1\le n\le 20000\) (the square case is Theorem C; higher powers are not a theorem here).
@@ -61,7 +61,11 @@ The honesty rule caught the author, not the cold grader, on the first pass:
 2. **Fabricated prime** \(50^2+1=2501\). Composite (\(41\cdot 61\)). Caught by `test_small_known_primes_n2plus1`. Replaced by the computed list of \(n\le 94\).
 3. **Fabricated sieve constant** \(0.261166\). The exact product is \(93555/237133\approx 0.3945254350933864\). Caught by evaluating the `Fraction` before locking.
 
-No error was left in `proof.md` after those three. The cold grader is required to recompute the census and hunt for gaps in A–K; this report is not finished until that pass is recorded below.
+The cold grader then caught a real census bug:
+
+4. **Undercounted \(\Omega\)** for \(n=45807\): \(n^2+1=2\cdot 5^7\cdot 13\cdot 1033\) has \(\Omega=10\), but `omega_big` returned \(9\) because it early-exited at `max_omega=8` before the last prime. That flipped one even/odd count (\(25042:24958\) instead of \(25041:24959\)). Buckets \(\Omega=1,2,3,\ge 4\) were already correct. Fixed by removing the early exit; locked by `test_omega_45807_not_undercounted` and `test_omega_parity_split_50000`.
+
+The first three never reached `proof.md` as published claims. Item 4 did, and was corrected after the first cold-grade FAIL.
 
 ## Self-grade (before cold grader)
 
@@ -75,7 +79,9 @@ Overall as checkable progress on an open problem: **pass only if the cold grader
 
 ## Cold grader
 
-To be filled after the isolated recompute. The grader sees the claim plus `proof.md` only.
+Round 1 (statement + first `proof.md` only): **FAIL**. Theorems A–K accepted; infinitude not claimed; all prime counts through \(N=10^6\) matched; sieve product and Euclid identities matched. Failed solely on the §7.3 odd/even \(\Omega\) split (see error 4). Nits on A2/F/H wording and the last digit of \(C_{\mathrm{abs}}\) were also addressed.
+
+Round 2 is required after the fix.
 
 ## How to rerun
 

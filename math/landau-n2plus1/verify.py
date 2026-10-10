@@ -206,9 +206,10 @@ def bateman_horn_prediction(N: int, C: float) -> float:
 # Census of n^2+1
 # ---------------------------------------------------------------------------
 
-def omega_big(m: int, primes: list[int], max_omega: int = 8) -> int | None:
+def omega_big(m: int, primes: list[int]) -> int | None:
     """Total number of prime factors Omega(m), or None if we cannot finish
-    factoring with the given prime table (and a primality test on the cofactor)."""
+    factoring with the given prime table (and a primality test on the cofactor).
+    """
     if m <= 1:
         return 0
     omega = 0
@@ -220,8 +221,6 @@ def omega_big(m: int, primes: list[int], max_omega: int = 8) -> int | None:
             while x % p == 0:
                 x //= p
                 omega += 1
-                if omega > max_omega:
-                    return omega
     if x > 1:
         if miller_rabin(x):
             omega += 1
@@ -709,6 +708,26 @@ def test_factor_not_always_t2plus1():
     assert not is_square(12)
 
 
+def test_omega_45807_not_undercounted():
+    """Regression: 45807^2+1 = 2 * 5^7 * 13 * 1033 has Omega=10, not 9."""
+    primes = sieve_primes(50010)
+    v = 45807 * 45807 + 1
+    assert v == 2_098_281_250
+    assert v == 2 * (5**7) * 13 * 1033
+    assert omega_big(v, primes) == 10
+
+
+def test_omega_parity_split_50000():
+    om = census_omega(50_000, timeout=60.0)
+    assert om[1] == 3613
+    assert om[2] == 12204
+    assert om[3] == 16680
+    assert om["ge4"] == 17503
+    assert om["unknown"] == 0
+    assert om["odd"] == 25041
+    assert om["even"] == 24959
+
+
 def test_only_n_eq_1_odd_gives_prime_up_to_2000():
     c = census_n2plus1(2000, timeout=15.0)
     assert c["odd_n_giving_prime"] == 1
@@ -753,6 +772,7 @@ def main():
     test_factor_not_always_t2plus1()
     test_simpson_integral_stable_at_1e6()
     test_no_proper_perfect_power_n2plus1_up_to_20000()
+    test_omega_45807_not_undercounted()
     print("algebraic tests OK")
 
     print("\n-- Bateman-Horn constant --")
