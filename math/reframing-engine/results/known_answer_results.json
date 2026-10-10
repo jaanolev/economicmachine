@@ -1,0 +1,1930 @@
+{
+  "protocol": "frozen_v1",
+  "official": [
+    {
+      "card_id": "flt_1985",
+      "year_cutoff": 1985,
+      "n_generated": 120,
+      "cutoff_rank": 18,
+      "gold_count": 6,
+      "gold_scores": [
+        12,
+        12,
+        12,
+        11,
+        11,
+        11
+      ],
+      "gold_ranks": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        11
+      ],
+      "best_gold_score": 12,
+      "best_gold_rank": 1,
+      "bad_rows": [
+        {
+          "id": "flt_1985::kummer_cyclotomic::TRANSLATE",
+          "object_id": "kummer_cyclotomic",
+          "template_id": "TRANSLATE",
+          "score": 6,
+          "why_bad": "Kummer already did this; irregular primes are the barrier."
+        },
+        {
+          "id": "flt_1985::class_groups::TRANSLATE",
+          "object_id": "class_groups",
+          "template_id": "TRANSLATE",
+          "score": 7,
+          "why_bad": "Iwasawa / class groups without a modularity attachment stay inside the stuck descent."
+        }
+      ],
+      "best_bad_score": 7,
+      "worst_bad_score": 6,
+      "median_generated_score": 9,
+      "G1_gold_above_all_bads": true,
+      "G2_gold_in_top_band": true,
+      "G3_some_bad_at_or_below_median": true,
+      "top10": [
+        {
+          "rank": 1,
+          "id": "flt_1985::elliptic_curves::MODULARITY",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 2,
+          "id": "flt_1985::galois_representations::MODULARITY",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 3,
+          "id": "flt_1985::modular_forms::MODULARITY",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 4,
+          "id": "flt_1985::class_groups::MODULARITY",
+          "score": 11,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "id": "flt_1985::elliptic_curves::DETECT",
+          "score": 11,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "id": "flt_1985::elliptic_curves::EMBED",
+          "score": 11,
+          "is_gold": false
+        },
+        {
+          "rank": 7,
+          "id": "flt_1985::elliptic_curves::LOCAL_GLOBAL",
+          "score": 11,
+          "is_gold": true
+        },
+        {
+          "rank": 8,
+          "id": "flt_1985::galois_representations::DETECT",
+          "score": 11,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "id": "flt_1985::galois_representations::LOCAL_GLOBAL",
+          "score": 11,
+          "is_gold": true
+        },
+        {
+          "rank": 10,
+          "id": "flt_1985::modular_forms::DETECT",
+          "score": 11,
+          "is_gold": false
+        }
+      ],
+      "all_gold": [
+        {
+          "id": "flt_1985::elliptic_curves::MODULARITY",
+          "object_id": "elliptic_curves",
+          "template_id": "MODULARITY",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['low_degree_diophantine']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template MODULARITY carries mechanism tags ['galois_constraints', 'local_global', 'no_geometric_object']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template MODULARITY changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area arithmetic_geometry is nearby algebraic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "flt_1985::galois_representations::MODULARITY",
+          "object_id": "galois_representations",
+          "template_id": "MODULARITY",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['low_degree_diophantine', 'regular_primes']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template MODULARITY carries mechanism tags ['galois_constraints', 'local_global', 'no_geometric_object']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template MODULARITY changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area arithmetic_geometry is nearby algebraic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "flt_1985::modular_forms::MODULARITY",
+          "object_id": "modular_forms",
+          "template_id": "MODULARITY",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['low_degree_diophantine']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template MODULARITY carries mechanism tags ['galois_constraints', 'local_global', 'no_geometric_object']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template MODULARITY changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area automorphic is nearby algebraic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "flt_1985::elliptic_curves::LOCAL_GLOBAL",
+          "object_id": "elliptic_curves",
+          "template_id": "LOCAL_GLOBAL",
+          "score": 11,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['low_degree_diophantine']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template LOCAL_GLOBAL carries mechanism tags ['local_global']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 1,
+              "kind": "code",
+              "evidence": "template LOCAL_GLOBAL is a language change with a possible principle"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area arithmetic_geometry is nearby algebraic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "flt_1985::galois_representations::LOCAL_GLOBAL",
+          "object_id": "galois_representations",
+          "template_id": "LOCAL_GLOBAL",
+          "score": 11,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['low_degree_diophantine', 'regular_primes']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template LOCAL_GLOBAL carries mechanism tags ['local_global']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 1,
+              "kind": "code",
+              "evidence": "template LOCAL_GLOBAL is a language change with a possible principle"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area arithmetic_geometry is nearby algebraic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "flt_1985::modular_forms::LOCAL_GLOBAL",
+          "object_id": "modular_forms",
+          "template_id": "LOCAL_GLOBAL",
+          "score": 11,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['low_degree_diophantine']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template LOCAL_GLOBAL carries mechanism tags ['local_global']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 1,
+              "kind": "code",
+              "evidence": "template LOCAL_GLOBAL is a language change with a possible principle"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area automorphic is nearby algebraic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        }
+      ],
+      "prestate_honesty": "This is NOT a 1637 card. The question-change 'prove modularity of elliptic curves' is already being proposed in 1985. A 1637 generator could not have named modular forms. The test asks whether a 1985 card ranks that already-proposed reframe above known-bad descents.",
+      "unsure": [
+        "Exact year of Hellegouarch's first paper attaching those curves (secondary sources: late 1960s).",
+        "Whether Frey's 1985 Oberwolfach remarks were already written as a preprint the same year."
+      ]
+    },
+    {
+      "card_id": "poincare_1981",
+      "year_cutoff": 1981,
+      "n_generated": 107,
+      "cutoff_rank": 17,
+      "gold_count": 3,
+      "gold_scores": [
+        12,
+        10,
+        10
+      ],
+      "gold_ranks": [
+        1,
+        5,
+        6
+      ],
+      "best_gold_score": 12,
+      "best_gold_rank": 1,
+      "bad_rows": [
+        {
+          "id": "poincare_1981::morse_theory::TRANSLATE",
+          "object_id": "morse_theory",
+          "template_id": "TRANSLATE",
+          "score": 6,
+          "why_bad": "Smale's method; Whitney trick fails in dimension 3."
+        },
+        {
+          "id": "poincare_1981::morse_theory::DEFORM",
+          "object_id": "morse_theory",
+          "template_id": "DEFORM",
+          "score": 10,
+          "why_bad": "A Morse deformation still needs high-dimensional cancellation."
+        }
+      ],
+      "best_bad_score": 10,
+      "worst_bad_score": 6,
+      "median_generated_score": 9,
+      "G1_gold_above_all_bads": true,
+      "G2_gold_in_top_band": true,
+      "G3_some_bad_at_or_below_median": true,
+      "top10": [
+        {
+          "rank": 1,
+          "id": "poincare_1981::harmonic_map_flow::DEFORM",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 2,
+          "id": "poincare_1981::expander_graphs::DEFORM",
+          "score": 11,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "id": "poincare_1981::harmonic_map_flow::DETECT",
+          "score": 11,
+          "is_gold": false
+        },
+        {
+          "rank": 4,
+          "id": "poincare_1981::branching_random_walks::DEFORM",
+          "score": 10,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "id": "poincare_1981::mean_curvature_flow::DEFORM",
+          "score": 10,
+          "is_gold": true
+        },
+        {
+          "rank": 6,
+          "id": "poincare_1981::minimal_surfaces::DEFORM",
+          "score": 10,
+          "is_gold": true
+        },
+        {
+          "rank": 7,
+          "id": "poincare_1981::morse_theory::DEFORM",
+          "score": 10,
+          "is_gold": false
+        },
+        {
+          "rank": 8,
+          "id": "poincare_1981::bilinear_forms_type_II::BILINEAR",
+          "score": 9,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "id": "poincare_1981::bilinear_forms_type_II::DETECT",
+          "score": 9,
+          "is_gold": false
+        },
+        {
+          "rank": 10,
+          "id": "poincare_1981::bilinear_forms_type_II::EMBED",
+          "score": 9,
+          "is_gold": false
+        }
+      ],
+      "all_gold": [
+        {
+          "id": "poincare_1981::harmonic_map_flow::DEFORM",
+          "object_id": "harmonic_map_flow",
+          "template_id": "DEFORM",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['dim2_uniformization']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template DEFORM carries mechanism tags ['deform_to_model', 'no_canonical_geometry']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template DEFORM changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area geometric_analysis is nearby topology"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "poincare_1981::mean_curvature_flow::DEFORM",
+          "object_id": "mean_curvature_flow",
+          "template_id": "DEFORM",
+          "score": 10,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no overlap between object.solves_case_tags and card easier-case tags"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template DEFORM carries mechanism tags ['deform_to_model', 'no_canonical_geometry']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template DEFORM changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area geometric_analysis is nearby topology"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "poincare_1981::minimal_surfaces::DEFORM",
+          "object_id": "minimal_surfaces",
+          "template_id": "DEFORM",
+          "score": 10,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no overlap between object.solves_case_tags and card easier-case tags"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template DEFORM carries mechanism tags ['deform_to_model', 'no_canonical_geometry']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template DEFORM changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area geometric_analysis is nearby topology"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        }
+      ],
+      "prestate_honesty": "Ricci flow does not exist as a named tool. The honest gold is 'borrow a geometric heat flow (Eells-Sampson style) and deform a metric or map toward a model'. Naming Ricci flow exactly would be leakage.",
+      "unsure": [
+        "How widely Thurston's geometrization conjecture was circulated in 1981.",
+        "Whether any Ricci-type flow was discussed informally before the 1982 paper."
+      ]
+    },
+    {
+      "card_id": "greentao_2003",
+      "year_cutoff": 2003,
+      "n_generated": 148,
+      "cutoff_rank": 23,
+      "gold_count": 3,
+      "gold_scores": [
+        13,
+        13,
+        12
+      ],
+      "gold_ranks": [
+        2,
+        3,
+        8
+      ],
+      "best_gold_score": 13,
+      "best_gold_rank": 2,
+      "bad_rows": [
+        {
+          "id": "greentao_2003::szemeredi_regularity::TRANSLATE",
+          "object_id": "szemeredi_regularity",
+          "template_id": "TRANSLATE",
+          "score": 9,
+          "why_bad": "Applies Szemeredi directly to a density-zero set."
+        },
+        {
+          "id": "greentao_2003::circle_method::DETECT",
+          "object_id": "circle_method",
+          "template_id": "DETECT",
+          "score": 11,
+          "why_bad": "Circle method for arbitrary-length prime APs is the stuck traditional path."
+        }
+      ],
+      "best_bad_score": 11,
+      "worst_bad_score": 9,
+      "median_generated_score": 8,
+      "G1_gold_above_all_bads": true,
+      "G2_gold_in_top_band": true,
+      "G3_some_bad_at_or_below_median": false,
+      "top10": [
+        {
+          "rank": 1,
+          "id": "greentao_2003::gowers_norms::BILINEAR",
+          "score": 13,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "id": "greentao_2003::gowers_norms::RELATIVE_DENSITY",
+          "score": 13,
+          "is_gold": true
+        },
+        {
+          "rank": 3,
+          "id": "greentao_2003::szemeredi_regularity::RELATIVE_DENSITY",
+          "score": 13,
+          "is_gold": true
+        },
+        {
+          "rank": 4,
+          "id": "greentao_2003::circle_method::BILINEAR",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "id": "greentao_2003::circle_method::EMBED",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "id": "greentao_2003::gowers_norms::DETECT",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 7,
+          "id": "greentao_2003::pseudorandom_majorants::EMBED",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 8,
+          "id": "greentao_2003::pseudorandom_majorants::RELATIVE_DENSITY",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 9,
+          "id": "greentao_2003::szemeredi_regularity::DETECT",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 10,
+          "id": "greentao_2003::additive_energy::BILINEAR",
+          "score": 11,
+          "is_gold": false
+        }
+      ],
+      "all_gold": [
+        {
+          "id": "greentao_2003::gowers_norms::RELATIVE_DENSITY",
+          "object_id": "gowers_norms",
+          "template_id": "RELATIVE_DENSITY",
+          "score": 13,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['length3_primes', 'positive_density_aps']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RELATIVE_DENSITY carries mechanism tags ['density_zero', 'need_relative_density', 'thin_sequence']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RELATIVE_DENSITY changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 1,
+              "kind": "code",
+              "evidence": "object area additive_combinatorics is distant from analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "greentao_2003::szemeredi_regularity::RELATIVE_DENSITY",
+          "object_id": "szemeredi_regularity",
+          "template_id": "RELATIVE_DENSITY",
+          "score": 13,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['positive_density_aps']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RELATIVE_DENSITY carries mechanism tags ['density_zero', 'need_relative_density', 'thin_sequence']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RELATIVE_DENSITY changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 1,
+              "kind": "code",
+              "evidence": "object area additive_combinatorics is distant from analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "greentao_2003::pseudorandom_majorants::RELATIVE_DENSITY",
+          "object_id": "pseudorandom_majorants",
+          "template_id": "RELATIVE_DENSITY",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['length3_primes', 'positive_density_aps']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RELATIVE_DENSITY carries mechanism tags ['density_zero', 'need_relative_density', 'thin_sequence']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RELATIVE_DENSITY changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 1,
+              "kind": "code",
+              "evidence": "maturity=mixed"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 1,
+              "kind": "code",
+              "evidence": "object area additive_combinatorics is distant from analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        }
+      ],
+      "prestate_honesty": "The objects (Szemeredi, Gowers norms, almost-prime majorants) exist. The reframe is the pairing: primes as a dense subset of a pseudorandom set.",
+      "unsure": [
+        "Exact public date of the Goldston-Yildirim truncated-divisor-sum paper a 2003 reader would cite."
+      ]
+    },
+    {
+      "card_id": "fi_1995",
+      "year_cutoff": 1995,
+      "n_generated": 139,
+      "cutoff_rank": 21,
+      "gold_count": 3,
+      "gold_scores": [
+        12,
+        12,
+        12
+      ],
+      "gold_ranks": [
+        1,
+        2,
+        9
+      ],
+      "best_gold_score": 12,
+      "best_gold_rank": 1,
+      "bad_rows": [
+        {
+          "id": "fi_1995::sieve_weights_selberg::WEIGHTS",
+          "object_id": "sieve_weights_selberg",
+          "template_id": "WEIGHTS",
+          "score": 12,
+          "why_bad": "Selberg weights without Type II still hit parity, and the sequence is thinner than n^2+1."
+        },
+        {
+          "id": "fi_1995::gaussian_integers::TRANSLATE",
+          "object_id": "gaussian_integers",
+          "template_id": "TRANSLATE",
+          "score": 5,
+          "why_bad": "x^2+y^4 = N(x+y^2 i) is a translation; without bilinear input it is Landau-like."
+        }
+      ],
+      "best_bad_score": 12,
+      "worst_bad_score": 5,
+      "median_generated_score": 9,
+      "G1_gold_above_all_bads": false,
+      "G2_gold_in_top_band": true,
+      "G3_some_bad_at_or_below_median": true,
+      "top10": [
+        {
+          "rank": 1,
+          "id": "fi_1995::bilinear_forms_type_II::BILINEAR",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 2,
+          "id": "fi_1995::bilinear_forms_type_II::EMBED",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 3,
+          "id": "fi_1995::bilinear_forms_type_II::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 4,
+          "id": "fi_1995::bombieri_vinogradov::RESTRICTED_SUPPORT",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "id": "fi_1995::bombieri_vinogradov::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "id": "fi_1995::hecke_grossencharacters::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 7,
+          "id": "fi_1995::sieve_weights_selberg::RESTRICTED_SUPPORT",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 8,
+          "id": "fi_1995::sieve_weights_selberg::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "id": "fi_1995::switching_principle::BILINEAR",
+          "score": 12,
+          "is_gold": true
+        },
+        {
+          "rank": 10,
+          "id": "fi_1995::switching_principle::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        }
+      ],
+      "all_gold": [
+        {
+          "id": "fi_1995::bilinear_forms_type_II::BILINEAR",
+          "object_id": "bilinear_forms_type_II",
+          "template_id": "BILINEAR",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'linear_dirichlet']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template BILINEAR carries mechanism tags ['parity_barrier', 'thin_sequence']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template BILINEAR changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area sieve is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "fi_1995::bilinear_forms_type_II::EMBED",
+          "object_id": "bilinear_forms_type_II",
+          "template_id": "EMBED",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'linear_dirichlet']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template EMBED carries mechanism tags ['degree_ge_2', 'no_extra_variable', 'thin_sequence']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template EMBED changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area sieve is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "fi_1995::switching_principle::BILINEAR",
+          "object_id": "switching_principle",
+          "template_id": "BILINEAR",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template BILINEAR carries mechanism tags ['parity_barrier', 'thin_sequence']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template BILINEAR changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area sieve is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        }
+      ],
+      "prestate_honesty": "The extra variable y is already in the problem statement. The reframe is to treat that extra variable as a source of bilinear forms that beat parity.",
+      "unsure": []
+    },
+    {
+      "card_id": "boundedgaps_2012",
+      "year_cutoff": 2012,
+      "n_generated": 151,
+      "cutoff_rank": 23,
+      "gold_count": 6,
+      "gold_scores": [
+        12,
+        12,
+        10,
+        10,
+        10,
+        10
+      ],
+      "gold_ranks": [
+        11,
+        12,
+        38,
+        39,
+        55,
+        56
+      ],
+      "best_gold_score": 12,
+      "best_gold_rank": 11,
+      "bad_rows": [
+        {
+          "id": "boundedgaps_2012::sieve_weights_selberg::TRANSLATE",
+          "object_id": "sieve_weights_selberg",
+          "template_id": "TRANSLATE",
+          "score": 6,
+          "why_bad": "Raw twin indicator / classical Selberg without the GPY improvement of weights or moduli."
+        },
+        {
+          "id": "boundedgaps_2012::l_functions::HEURISTIC_MODEL",
+          "object_id": "l_functions",
+          "template_id": "HEURISTIC_MODEL",
+          "score": 4,
+          "why_bad": "Assuming RH-quality pair correlation does not produce an unconditional bounded gap."
+        }
+      ],
+      "best_bad_score": 6,
+      "worst_bad_score": 4,
+      "median_generated_score": 9,
+      "G1_gold_above_all_bads": true,
+      "G2_gold_in_top_band": true,
+      "G3_some_bad_at_or_below_median": true,
+      "top10": [
+        {
+          "rank": 1,
+          "id": "boundedgaps_2012::bilinear_forms_type_II::BILINEAR",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "id": "boundedgaps_2012::bilinear_forms_type_II::DETECT",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "id": "boundedgaps_2012::bilinear_forms_type_II::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 4,
+          "id": "boundedgaps_2012::half_dimensional_sieve::BILINEAR",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "id": "boundedgaps_2012::half_dimensional_sieve::DETECT",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "id": "boundedgaps_2012::half_dimensional_sieve::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 7,
+          "id": "boundedgaps_2012::switching_principle::BILINEAR",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 8,
+          "id": "boundedgaps_2012::switching_principle::WEIGHTS",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "id": "boundedgaps_2012::well_factorable_moduli::BILINEAR",
+          "score": 12,
+          "is_gold": false
+        },
+        {
+          "rank": 10,
+          "id": "boundedgaps_2012::well_factorable_moduli::DETECT",
+          "score": 12,
+          "is_gold": false
+        }
+      ],
+      "all_gold": [
+        {
+          "id": "boundedgaps_2012::well_factorable_moduli::RESTRICTED_SUPPORT",
+          "object_id": "well_factorable_moduli",
+          "template_id": "RESTRICTED_SUPPORT",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'eh_implies_bounded_gaps']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RESTRICTED_SUPPORT carries mechanism tags ['insufficient_level_of_distribution', 'parity_barrier']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RESTRICTED_SUPPORT changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area sieve is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "boundedgaps_2012::well_factorable_moduli::WEIGHTS",
+          "object_id": "well_factorable_moduli",
+          "template_id": "WEIGHTS",
+          "score": 12,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'eh_implies_bounded_gaps']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template WEIGHTS carries mechanism tags ['insufficient_level_of_distribution', 'parity_barrier', 'tuple_detection']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template WEIGHTS changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area sieve is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": 0,
+              "kind": "code",
+              "evidence": "no circularity penalty"
+            }
+          ]
+        },
+        {
+          "id": "boundedgaps_2012::bombieri_vinogradov::RESTRICTED_SUPPORT",
+          "object_id": "bombieri_vinogradov",
+          "template_id": "RESTRICTED_SUPPORT",
+          "score": 10,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'brun_almost_twins']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RESTRICTED_SUPPORT carries mechanism tags ['insufficient_level_of_distribution', 'parity_barrier']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RESTRICTED_SUPPORT changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area analytic_nt is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": -2,
+              "kind": "code",
+              "evidence": "native object is a restatement of the stuck language"
+            }
+          ]
+        },
+        {
+          "id": "boundedgaps_2012::bombieri_vinogradov::WEIGHTS",
+          "object_id": "bombieri_vinogradov",
+          "template_id": "WEIGHTS",
+          "score": 10,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'brun_almost_twins']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template WEIGHTS carries mechanism tags ['insufficient_level_of_distribution', 'parity_barrier', 'tuple_detection']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template WEIGHTS changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area analytic_nt is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": -2,
+              "kind": "code",
+              "evidence": "native object is a restatement of the stuck language"
+            }
+          ]
+        },
+        {
+          "id": "boundedgaps_2012::sieve_weights_selberg::RESTRICTED_SUPPORT",
+          "object_id": "sieve_weights_selberg",
+          "template_id": "RESTRICTED_SUPPORT",
+          "score": 10,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'brun_almost_twins', 'eh_implies_bounded_gaps']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RESTRICTED_SUPPORT carries mechanism tags ['insufficient_level_of_distribution', 'parity_barrier']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template RESTRICTED_SUPPORT changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area sieve is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": -2,
+              "kind": "code",
+              "evidence": "native object is a restatement of the stuck language"
+            }
+          ]
+        },
+        {
+          "id": "boundedgaps_2012::sieve_weights_selberg::WEIGHTS",
+          "object_id": "sieve_weights_selberg",
+          "template_id": "WEIGHTS",
+          "score": 10,
+          "is_gold": true,
+          "features": [
+            {
+              "name": "easier_case",
+              "points": 2,
+              "kind": "code",
+              "evidence": "object already solves solved-easier tags ['almost_primes', 'brun_almost_twins', 'eh_implies_bounded_gaps']"
+            },
+            {
+              "name": "barrier",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template WEIGHTS carries mechanism tags ['insufficient_level_of_distribution', 'parity_barrier', 'tuple_detection']"
+            },
+            {
+              "name": "code_shadow",
+              "points": 2,
+              "kind": "code",
+              "evidence": "finite computation is named in object or template shadow"
+            },
+            {
+              "name": "attack_surface",
+              "points": 2,
+              "kind": "code",
+              "evidence": "template WEIGHTS changes averaging/weights/deformation/family"
+            },
+            {
+              "name": "implication",
+              "points": 2,
+              "kind": "judgment",
+              "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+            },
+            {
+              "name": "maturity",
+              "points": 2,
+              "kind": "code",
+              "evidence": "maturity=theorem_rich"
+            },
+            {
+              "name": "distant_borrow",
+              "points": 0,
+              "kind": "code",
+              "evidence": "object area sieve is nearby analytic_nt"
+            },
+            {
+              "name": "circularity",
+              "points": -2,
+              "kind": "code",
+              "evidence": "native object is a restatement of the stuck language"
+            }
+          ]
+        }
+      ],
+      "prestate_honesty": "The community question is already 'improve GPY'. Gold pairings are (i) better weights that need less distribution, (ii) a bit more than BV on restricted moduli. This tests ranking, not inventing GPY.",
+      "unsure": []
+    }
+  ],
+  "diagnostic_poincare_1995": {
+    "card_id": "poincare_1995",
+    "year_cutoff": 1995,
+    "n_generated": 139,
+    "cutoff_rank": 21,
+    "gold_count": 1,
+    "gold_scores": [
+      12
+    ],
+    "gold_ranks": [
+      2
+    ],
+    "best_gold_score": 12,
+    "best_gold_rank": 2,
+    "bad_rows": [
+      {
+        "id": "poincare_1995::morse_theory::TRANSLATE",
+        "object_id": "morse_theory",
+        "template_id": "TRANSLATE",
+        "score": 4,
+        "why_bad": "Still fails in dimension 3 after Hamilton's program exists."
+      }
+    ],
+    "best_bad_score": 4,
+    "worst_bad_score": 4,
+    "median_generated_score": 9,
+    "G1_gold_above_all_bads": true,
+    "G2_gold_in_top_band": true,
+    "G3_some_bad_at_or_below_median": true,
+    "top10": [
+      {
+        "rank": 1,
+        "id": "poincare_1995::harmonic_map_flow::DEFORM",
+        "score": 12,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "id": "poincare_1995::ricci_flow::DEFORM",
+        "score": 12,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "id": "poincare_1995::expander_graphs::DEFORM",
+        "score": 11,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "id": "poincare_1995::harmonic_map_flow::DETECT",
+        "score": 11,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "id": "poincare_1995::homogeneous_flows::DEFORM",
+        "score": 11,
+        "is_gold": false
+      },
+      {
+        "rank": 6,
+        "id": "poincare_1995::ricci_flow::DETECT",
+        "score": 11,
+        "is_gold": false
+      },
+      {
+        "rank": 7,
+        "id": "poincare_1995::branching_random_walks::DEFORM",
+        "score": 10,
+        "is_gold": false
+      },
+      {
+        "rank": 8,
+        "id": "poincare_1995::mean_curvature_flow::DEFORM",
+        "score": 10,
+        "is_gold": false
+      },
+      {
+        "rank": 9,
+        "id": "poincare_1995::minimal_surfaces::DEFORM",
+        "score": 10,
+        "is_gold": false
+      },
+      {
+        "rank": 10,
+        "id": "poincare_1995::additive_energy::BILINEAR",
+        "score": 9,
+        "is_gold": false
+      }
+    ],
+    "all_gold": [
+      {
+        "id": "poincare_1995::ricci_flow::DEFORM",
+        "object_id": "ricci_flow",
+        "template_id": "DEFORM",
+        "score": 12,
+        "is_gold": true,
+        "features": [
+          {
+            "name": "easier_case",
+            "points": 2,
+            "kind": "code",
+            "evidence": "object already solves solved-easier tags ['dim2_uniformization', 'positive_ricci']"
+          },
+          {
+            "name": "barrier",
+            "points": 2,
+            "kind": "code",
+            "evidence": "template DEFORM carries mechanism tags ['deform_to_model', 'no_canonical_geometry', 'singularities']"
+          },
+          {
+            "name": "code_shadow",
+            "points": 2,
+            "kind": "code",
+            "evidence": "finite computation is named in object or template shadow"
+          },
+          {
+            "name": "attack_surface",
+            "points": 2,
+            "kind": "code",
+            "evidence": "template DEFORM changes averaging/weights/deformation/family"
+          },
+          {
+            "name": "implication",
+            "points": 2,
+            "kind": "judgment",
+            "evidence": "template writes T => original in the imported language; implication text is canned, not a checked proof"
+          },
+          {
+            "name": "maturity",
+            "points": 2,
+            "kind": "code",
+            "evidence": "maturity=theorem_rich"
+          },
+          {
+            "name": "distant_borrow",
+            "points": 0,
+            "kind": "code",
+            "evidence": "object area geometric_analysis is nearby topology"
+          },
+          {
+            "name": "circularity",
+            "points": 0,
+            "kind": "code",
+            "evidence": "no circularity penalty"
+          }
+        ]
+      }
+    ],
+    "prestate_honesty": "This card tests ranking of an already-named community reframe against Morse theory and decorative borrows. It does not test inventing Ricci flow.",
+    "unsure": []
+  },
+  "leakage_scan": {
+    "ok": true,
+    "hits": []
+  },
+  "suite": {
+    "S1_all_G1": false,
+    "S2_at_least_3_G2": true,
+    "S3_all_G3": false,
+    "S4_no_leakage_strings": true,
+    "PASS": false,
+    "n_official_G2": 5
+  },
+  "gold_notes": {
+    "flt_1985": "Frey 1985 + Serre epsilon + Taniyama-Shimura: prove modularity of (semistable) elliptic curves. Ribet 1986 is after the cutoff; the reframe is already the proposed question.",
+    "poincare_1981": "Ricci flow is not available in 1981. The honest ancestor is a geometric heat flow / canonical-metric deformation (Eells-Sampson 1964).",
+    "poincare_1995": "Hamilton's program is already the community question.",
+    "greentao_2003": "Transference: primes dense in a pseudorandom ambient.",
+    "fi_1995": "Extra variable supplies Type II information that beats parity.",
+    "boundedgaps_2012": "Maynard: better weights. Zhang: a bit more than BV on restricted moduli."
+  }
+}
