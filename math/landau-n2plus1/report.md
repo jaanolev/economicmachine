@@ -81,7 +81,7 @@ Overall as checkable progress on an open problem: **pass only if the cold grader
 
 Round 1 (statement + first `proof.md` only): **FAIL**. Theorems A–K accepted; infinitude not claimed; all prime counts through \(N=10^6\) matched; sieve product and Euclid identities matched. Failed solely on the §7.3 odd/even \(\Omega\) split (see error 4). Nits on A2/F/H wording and the last digit of \(C_{\mathrm{abs}}\) were also addressed.
 
-Round 2 is required after the fix.
+Round 2 (fresh agent, statement + revised `proof.md` only): **PASS**. Infinitude not claimed. A–K and H accepted. Independent recompute matched every locked integer, including the corrected \(\Omega\) split \(25041:24959\) and the census through \(N=10^6\). Remaining comments are wording nits (standard Euclidean\(\Rightarrow\)UFD compression, \(\nu(2)\) residue check not written out). Not a proof of Landau IV.
 
 ## How to rerun
 
